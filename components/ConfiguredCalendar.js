@@ -14,7 +14,7 @@ function ConfiguredCalendar() {
 const styles = StyleSheet.create({
   calendar: {
     width: '80%',
-    padding: 50,
+    flex: 20,
   },
 });
 

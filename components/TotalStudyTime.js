@@ -13,8 +13,9 @@ const TotalStudyTime = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    marginTop: 50,
+    marginTop: 10,
     alignSelf: 'flex-end',
+    flex: 1,
   },
   text: {
     fontSize: 15,
