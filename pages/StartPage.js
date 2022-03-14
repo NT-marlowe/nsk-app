@@ -4,11 +4,12 @@ import React from 'react';
 
 import ConfiguredCalendar from '../components/ConfiguredCalendar';
 import AppList from '../components/AppList';
-
+import TotalStudyTime from '../components/TotalStudyTime';
 
 function StartPage() {
   return (
     <View style={styles.container}>
+      <TotalStudyTime />
 
       <ConfiguredCalendar />
       <View style={{ flex: 3 }}>
@@ -17,7 +18,6 @@ function StartPage() {
       </View>
 
       <AppList />
-
     </View>
   );
 }
