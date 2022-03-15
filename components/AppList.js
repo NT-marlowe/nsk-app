@@ -7,8 +7,6 @@ const AppList = (props) => {
   //   navigation.navigate('Application');
   // };
   // console.log(props.navigation);
-  if (!props.navigation) console.log('Null');
-  else console.log(props.navigation);
 
   return (
     <View style={styles.container}>
@@ -18,8 +16,7 @@ const AppList = (props) => {
           name="acrobat"
           // launchApp={() => navigation.navigate('Application')}
         />
-        <AppIcon name="amazon" navigation={props.navigation} />
-        <AppIcon name="android" />
+        <AppIcon name="amazon" />
         <AppIcon name="angellist" />
         <AppIcon name="aol" />
         <AppIcon name="appnet" />

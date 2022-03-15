@@ -6,16 +6,14 @@ import AppList from '../components/AppList';
 import TotalStudyTime from '../components/TotalStudyTime';
 import Quotes from '../components/Quotes';
 
-function StartPage({ navigation }) {
-  // if (!navigation) console.log('null');
-  // console.log(navigation);
+function StartPage() {
   return (
     <View style={styles.container}>
       <TotalStudyTime />
 
       <ConfiguredCalendar />
 
-      <AppList navigation={navigation} />
+      <AppList />
 
       <Quotes />
     </View>

@@ -1,9 +1,10 @@
 import React from 'react';
 import { StyleSheet, View, Text, Alert } from 'react-native';
-
+import { NavigationContext } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Zocial';
 
 const AppIcon = (props) => {
+  const navigation = React.useContext(NavigationContext);
   const createTwoButtonAlert = () => {
     Alert.alert(props.name, 'Are you launching "' + props.name + '"?', [
       {
@@ -14,7 +15,8 @@ const AppIcon = (props) => {
       {
         text: 'Launch',
         onPress: () => {
-          props.navigation.navigate('Application');
+          // props.navigation.navigate('Application');
+          navigation.navigate('Application');
         },
         style: 'default',
       },
