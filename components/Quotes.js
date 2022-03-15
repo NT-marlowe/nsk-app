@@ -4,15 +4,8 @@ import { StyleSheet, View, Text } from 'react-native';
 import quotes from '../assets/quotes.json';
 
 const Quotes = () => {
-  //   let quote;
-  //   for (let index = 0; index < quotes.length; index++) {
-  //     const element = quotes[index];
-  //     if (element.id === 10) {
-  //       quote = element;
-  //     }
-  //   }
-
-  const quote = quotes[10];
+  const random_index = Math.floor(Math.random() * quotes.length);
+  const quote = quotes[random_index];
 
   return (
     <View style={styles.container}>
@@ -27,13 +20,16 @@ const styles = StyleSheet.create({
     flex: 8,
   },
   quote: {
-    fontSize: 20,
+    fontSize: 16,
+    marginRight: 10,
+    marginLeft: 10,
     fontFamily: 'serif',
   },
   description: {
-    fontSize: 20,
+    fontSize: 12,
     alignSelf: 'flex-end',
     marginTop: 10,
+    marginRight: 10,
     fontFamily: 'serif',
   },
 });
