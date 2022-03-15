@@ -2,14 +2,21 @@ import React from 'react';
 import { StyleSheet, View, ScrollView } from 'react-native';
 import AppIcon from './AppIcon';
 
-const AppList = () => {
+const AppList = (props) => {
+  // const handleLaunchApp = () => {
+  //   navigation.navigate('Application');
+  // };
+  // console.log(props.navigation);
+
   return (
     <View style={styles.container}>
       <ScrollView horizontal={true}>
         {/* </View>horizontal={true} style={styles.scrollView}> */}
-        <AppIcon name="acrobat" />
+        <AppIcon
+          name="acrobat"
+          // launchApp={() => navigation.navigate('Application')}
+        />
         <AppIcon name="amazon" />
-        <AppIcon name="android" />
         <AppIcon name="angellist" />
         <AppIcon name="aol" />
         <AppIcon name="appnet" />
