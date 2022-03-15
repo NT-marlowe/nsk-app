@@ -21,7 +21,7 @@ const AppIcon = (props) => {
 const styles = StyleSheet.create({
   icon: {
     alignSelf: 'center',
-    marginTop: 10,
+    margin: 10,
   },
   text: {
     color: 'black',
