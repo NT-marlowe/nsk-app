@@ -1,9 +1,25 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Alert } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Zocial';
 
 const AppIcon = (props) => {
+  const createTwoButtonAlert = () => {
+    Alert.alert(props.name, 'Are you launching "' + props.name + '"?', [
+      {
+        text: 'Cancel',
+        onPress: () => console.log('Cancel launch'),
+        style: 'cancel',
+      },
+      {
+        text: 'Launch',
+        onPress: () => {
+          props.navigation.navigate('Application');
+        },
+        style: 'default',
+      },
+    ]);
+  };
   return (
     <View style={styles.container}>
       <Icon
@@ -11,7 +27,7 @@ const AppIcon = (props) => {
         color="black"
         size={50}
         style={styles.icon}
-        onPress={() => {}}
+        onPress={createTwoButtonAlert}
       />
       <Text>{props.name}</Text>
     </View>

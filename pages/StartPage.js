@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import React from 'react';
 
 import ConfiguredCalendar from '../components/ConfiguredCalendar';
@@ -7,14 +6,16 @@ import AppList from '../components/AppList';
 import TotalStudyTime from '../components/TotalStudyTime';
 import Quotes from '../components/Quotes';
 
-function StartPage() {
+function StartPage({ navigation }) {
+  // if (!navigation) console.log('null');
+  // console.log(navigation);
   return (
     <View style={styles.container}>
       <TotalStudyTime />
 
       <ConfiguredCalendar />
 
-      <AppList />
+      <AppList navigation={navigation} />
 
       <Quotes />
     </View>
