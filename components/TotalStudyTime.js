@@ -5,7 +5,7 @@ import { StyleSheet, View, Image, Text } from 'react-native';
 
 const TotalStudyTime = () => {
   const [seconds, setSeconds] = useState(0);
-  const [updatingSeconds, setUpdatingSeconds] = useState(true);
+  // const [isUpdatingSeconds, setIsUpdatingSeconds] = useState(true);
 
   useEffect(() => {
     fetch(
@@ -19,14 +19,14 @@ const TotalStudyTime = () => {
           setSeconds(data.seconds);
         }
       });
-    setUpdatingSeconds(false);
+    // setIsUpdatingSeconds(false);
   }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (updatingSeconds !== true) {
-        setSeconds((seconds) => seconds + 1);
-      }
+      // if (isUpdatingSeconds !== true) {
+      setSeconds((seconds) => seconds + 1);
+      // }
     }, 1000);
     return () => {
       clearInterval(interval);
