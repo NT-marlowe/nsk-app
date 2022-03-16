@@ -1,10 +1,40 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import TmpApp from '../apps/TmpApp';
 
-const ApplicationPage = () => {
+const SelectedApp = (appName) => {
+  switch (appName) {
+    // appNameにはAppIconに渡したnameプロパティが入っているので，それを使って
+    // appsディレクトリからインポートしたアプリコンポーネントを選択する
+    case 'TmpApp':
+      return <TmpApp />;
+    case 'android':
+      return (
+        <View>
+          <Text>Android</Text>
+        </View>
+      );
+    case 'ios':
+      return (
+        <View>
+          <Text>iOS</Text>
+        </View>
+      );
+    default:
+      return (
+        <View>
+          <Text>Unknown</Text>
+        </View>
+      );
+  }
+};
+
+const ApplicationPage = ({ route }) => {
+  const { appName } = route.params;
   return (
     <View>
-      <Text>Application Page</Text>
+      <SelectedApp appName={appName} />
+      <Text>{!appName ? 'Null' : appName}</Text>
     </View>
   );
 };
