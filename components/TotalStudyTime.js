@@ -5,7 +5,6 @@ import { StyleSheet, View, Image, Text } from 'react-native';
 
 const TotalStudyTime = () => {
   const [seconds, setSeconds] = useState(0);
-  // const [isUpdatingSeconds, setIsUpdatingSeconds] = useState(true);
 
   useEffect(() => {
     fetch(
@@ -19,7 +18,6 @@ const TotalStudyTime = () => {
           setSeconds(data.seconds);
         }
       });
-    // setIsUpdatingSeconds(false);
   }, []);
 
   useEffect(() => {
@@ -53,7 +51,6 @@ const TotalStudyTime = () => {
       <Image style={styles.image} source={require('../assets/favicon.png')} />
       <Text style={styles.text}>
         {Math.trunc(seconds / 3600)}時間{Math.trunc((seconds % 3600) / 60)}分
-        {/* {Math.trunc(seconds % 60)} */}
       </Text>
     </View>
   );
