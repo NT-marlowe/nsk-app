@@ -16,7 +16,9 @@ const AppIcon = (props) => {
         text: 'Launch',
         onPress: () => {
           // props.navigation.navigate('Application');
-          navigation.navigate('Application');
+          navigation.navigate('Application', {
+            appName: props.name,
+          });
         },
         style: 'default',
       },

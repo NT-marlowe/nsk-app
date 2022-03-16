@@ -53,7 +53,7 @@ const TotalStudyTime = () => {
       <Image style={styles.image} source={require('../assets/favicon.png')} />
       <Text style={styles.text}>
         {Math.trunc(seconds / 3600)}時間{Math.trunc((seconds % 3600) / 60)}分
-        {Math.trunc(seconds % 60)}
+        {/* {Math.trunc(seconds % 60)} */}
       </Text>
     </View>
   );

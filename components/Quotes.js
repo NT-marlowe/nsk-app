@@ -18,15 +18,18 @@ const Quotes = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 8,
+    marginBottom: 10,
+    paddingLeft: 30,
+    paddingRight: 30,
   },
   quote: {
-    fontSize: 16,
+    fontSize: 20,
     marginRight: 10,
     marginLeft: 10,
     fontFamily: 'serif',
   },
   description: {
-    fontSize: 12,
+    fontSize: 16,
     alignSelf: 'flex-end',
     marginTop: 10,
     marginRight: 10,
