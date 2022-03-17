@@ -21,35 +21,38 @@ function ConfiguredCalendar() {
       });
   }, []);
 
-  // useEffect(() => {
-  //   fetch(
-  //     'https://nskserver-97f50-default-rtdb.firebaseio.com/login_dates.json',
-  //     {
-  //       method: 'PATCH',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({
-  //         loginDates,
-  //       }),
-  //     }
-  //   ).then(() => {
-  //     console.log('hey');
-  //   });
-  // }, []);
+  const [loginRecordIsDone, setLoginRecordisDone] = useState(false);
+
+  const updateLoginDatesOnFirebase = () => {
+    fetch(
+      'https://nskserver-97f50-default-rtdb.firebaseio.com/login_dates.json',
+      {
+        method: 'PATCH',
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          loginDates,
+        }),
+      }
+    ).then(() => {});
+  };
 
   const today = new Date().getDate();
-  // const todayIsNewLogin = loginDates !== null && !loginDates.includes(today);
   const [todayIsNewLogin, setTodayIsNewLogin] = useState(false);
 
   useEffect(() => {
     setTodayIsNewLogin(loginDates !== null && !loginDates.includes(today));
+    if (todayIsNewLogin) {
+      console.log('Login Bonus!!');
+      setLoginDates([...loginDates, today]);
+      setLoginRecordisDone(true);
+      updateLoginDatesOnFirebase();
+    } else {
+      console.log(loginDates);
+    }
   }, [loginDates]);
-
-  if (todayIsNewLogin) {
-    console.log(today + ' New login');
-    // console.log(loginDates[0]);
-  }
 
   return (
     <View style={styles.calendar}>
