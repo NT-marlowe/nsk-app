@@ -6,28 +6,45 @@ import { Calendar } from 'react-native-calendars';
 
 function ConfiguredCalendar() {
   const [loginDates, setLoginDates] = useState([]);
+  const [datesFetchIsDone, setDatesFetchIsDone] = useState(false);
+  const today = new Date().getDate();
 
   useEffect(() => {
+    // setDatesFetchIsDone(false);
     fetch(
       'https://nskserver-97f50-default-rtdb.firebaseio.com/login_dates.json'
     )
       .then((response) => {
+        // setDatesFetchIsDone(true);
         return response.json();
       })
       .then((data) => {
         if (data !== null) {
           setLoginDates(data._2022_3);
+          setDatesFetchIsDone(true);
         }
       });
   }, []);
 
-  const [loginRecordIsDone, setLoginRecordisDone] = useState(false);
+  useEffect(() => {
+    const todayIsNewLogin = loginDates !== null && !loginDates.includes(today);
+    if (datesFetchIsDone) {
+      console.log('Hey  ' + loginDates);
+      if (todayIsNewLogin) {
+        console.log('Login Bonus!!');
+        setLoginDates([...loginDates, today]);
+        console.log(loginDates);
+      } else {
+        console.log('No login bonus');
+        console.log(loginDates);
+      }
+    }
+  }, [datesFetchIsDone]);
 
   const updateLoginDatesOnFirebase = () => {
     fetch(
       'https://nskserver-97f50-default-rtdb.firebaseio.com/login_dates.json',
       {
-        method: 'PATCH',
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -36,23 +53,11 @@ function ConfiguredCalendar() {
           loginDates,
         }),
       }
-    ).then(() => {});
-  };
-
-  const today = new Date().getDate();
-  const [todayIsNewLogin, setTodayIsNewLogin] = useState(false);
-
-  useEffect(() => {
-    setTodayIsNewLogin(loginDates !== null && !loginDates.includes(today));
-    if (todayIsNewLogin) {
-      console.log('Login Bonus!!');
-      setLoginDates([...loginDates, today]);
-      setLoginRecordisDone(true);
-      updateLoginDatesOnFirebase();
-    } else {
+    ).then(() => {
       console.log(loginDates);
-    }
-  }, [loginDates]);
+      console.log('Update is done');
+    });
+  };
 
   return (
     <View style={styles.calendar}>
