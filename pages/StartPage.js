@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native';
 import React from 'react';
 
-import ConfiguredCalendar from '../components/ConfiguredCalendar';
+import ConfiguredCalendar from '../components/calendar/ConfiguredCalendar';
 import AppList from '../components/AppList';
 import TotalStudyTime from '../components/TotalStudyTime';
 import Quotes from '../components/Quotes';
