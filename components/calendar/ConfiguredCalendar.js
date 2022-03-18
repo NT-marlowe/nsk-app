@@ -11,21 +11,21 @@ function ConfiguredCalendar() {
   const today = new Date().getDate();
 
   useEffect(() => {
-    // setDatesFetchIsDone(false);
-    fetch(
-      'https://nskserver-97f50-default-rtdb.firebaseio.com/login_dates.json'
-    )
-      .then((response) => {
-        // setDatesFetchIsDone(true);
-        return response.json();
-      })
-      .then((data) => {
-        if (data !== null) {
-          setLoginDates(data._2022_3);
-          setDatesFetchIsDone(true);
-          console.log('fetch now');
-        }
-      });
+    if (!loginDates.includes(today)) {
+      fetch(
+        'https://nskserver-97f50-default-rtdb.firebaseio.com/login_dates.json'
+      )
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          if (data !== null) {
+            setLoginDates(data._2022_3);
+            setDatesFetchIsDone(true);
+            // console.log('fetch now');
+          }
+        });
+    }
   }, []);
 
   useEffect(() => {
@@ -38,14 +38,11 @@ function ConfiguredCalendar() {
         console.log(loginDates);
         setLoginIsAdded(true);
       } else {
-        console.log('No login bonus');
-        console.log(loginDates);
       }
     }
     // }, []);
   }, [datesFetchIsDone]);
 
-  // const updateLoginDatesOnFirebase = () => {
   useEffect(() => {
     if (loginDates.length > 0 && loginDates.includes(today)) {
       console.log('before patch');
@@ -66,9 +63,7 @@ function ConfiguredCalendar() {
         console.log(loginDates);
       });
     }
-    // }, [loginDates]);
   }, [loginIsAdded]);
-  // }, []);
 
   return (
     <View style={styles.calendar}>
