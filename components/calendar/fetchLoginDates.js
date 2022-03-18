@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const stringToList = (datesString) => {};
+// const stringToList = (datesString) => {};
 
 const fetchLoginDates = () => {
   const [loginDates, setLoginDates] = useState('');

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import { Calendar } from 'react-native-calendars';
-import fetchLoginDates from './fetchLoginDates';
+// import fetchLoginDates from './fetchLoginDates';
+import generateMarkedDates from './generateMarkedDates';
 
 function ConfiguredCalendar() {
   const [loginDates, setLoginDates] = useState([]);
@@ -31,11 +32,11 @@ function ConfiguredCalendar() {
   useEffect(() => {
     const todayIsNewLogin = loginDates !== null && !loginDates.includes(today);
     if (datesFetchIsDone) {
-      console.log('Hey  ' + loginDates);
+      // console.log('Hey  ' + loginDates);
       if (todayIsNewLogin) {
-        console.log('Login Bonus!!');
+        // console.log('Login Bonus!!');
         setLoginDates([...loginDates, today]);
-        console.log(loginDates);
+        // console.log(loginDates);
         setLoginIsAdded(true);
       } else {
       }
@@ -45,8 +46,8 @@ function ConfiguredCalendar() {
 
   useEffect(() => {
     if (loginDates.length > 0 && loginDates.includes(today)) {
-      console.log('before patch');
-      console.log(loginDates);
+      // console.log('before patch');
+      // console.log(loginDates);
       fetch(
         'https://nskserver-97f50-default-rtdb.firebaseio.com/login_dates.json',
         {
@@ -59,15 +60,23 @@ function ConfiguredCalendar() {
           }),
         }
       ).then(() => {
-        console.log('Updating');
-        console.log(loginDates);
+        // console.log('Updating');
+        // console.log(loginDates);
+        // console.log('generaing');
+        // console.log(generateMarkedDates(loginDates));
       });
     }
   }, [loginIsAdded]);
 
+  const markedDates = generateMarkedDates(loginDates);
   return (
     <View style={styles.calendar}>
-      <Calendar />
+      <Calendar markedDates={markedDates} />
+      {/* <Calendar
+        markedDates={{
+          '2022-03-17': { selected: true, selectedColor: 'blue' },
+        }}
+      /> */}
     </View>
   );
 }
