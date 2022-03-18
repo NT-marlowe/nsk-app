@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import { Calendar } from 'react-native-calendars';
-// import fetchLoginDates from './fetchLoginDates';
 import generateMarkedDates from './generateMarkedDates';
 
 function ConfiguredCalendar() {
@@ -23,7 +22,6 @@ function ConfiguredCalendar() {
           if (data !== null) {
             setLoginDates(data._2022_3);
             setDatesFetchIsDone(true);
-            // console.log('fetch now');
           }
         });
     }
@@ -32,22 +30,16 @@ function ConfiguredCalendar() {
   useEffect(() => {
     const todayIsNewLogin = loginDates !== null && !loginDates.includes(today);
     if (datesFetchIsDone) {
-      // console.log('Hey  ' + loginDates);
       if (todayIsNewLogin) {
-        // console.log('Login Bonus!!');
         setLoginDates([...loginDates, today]);
-        // console.log(loginDates);
         setLoginIsAdded(true);
       } else {
       }
     }
-    // }, []);
   }, [datesFetchIsDone]);
 
   useEffect(() => {
     if (loginDates.length > 0 && loginDates.includes(today)) {
-      // console.log('before patch');
-      // console.log(loginDates);
       fetch(
         'https://nskserver-97f50-default-rtdb.firebaseio.com/login_dates.json',
         {
@@ -59,12 +51,7 @@ function ConfiguredCalendar() {
             _2022_3: loginDates,
           }),
         }
-      ).then(() => {
-        // console.log('Updating');
-        // console.log(loginDates);
-        // console.log('generaing');
-        // console.log(generateMarkedDates(loginDates));
-      });
+      ).then(() => {});
     }
   }, [loginIsAdded]);
 
@@ -72,11 +59,6 @@ function ConfiguredCalendar() {
   return (
     <View style={styles.calendar}>
       <Calendar markedDates={markedDates} />
-      {/* <Calendar
-        markedDates={{
-          '2022-03-17': { selected: true, selectedColor: 'blue' },
-        }}
-      /> */}
     </View>
   );
 }
