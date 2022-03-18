@@ -1,0 +1,4212 @@
+[
+  {
+    "id": 0,
+    "English": "come",
+    "Japanese": "訪れる / 来る"
+  },
+  {
+    "id": 1,
+    "English": "get",
+    "Japanese": "受け取る / 手に入れる"
+  },
+  {
+    "id": 2,
+    "English": "give",
+    "Japanese": "あたえる"
+  },
+  {
+    "id": 3,
+    "English": "go",
+    "Japanese": "行く"
+  },
+  {
+    "id": 4,
+    "English": "keep",
+    "Japanese": "保つ / 保存する"
+  },
+  {
+    "id": 5,
+    "English": "let",
+    "Japanese": "させる / 許す"
+  },
+  {
+    "id": 6,
+    "English": "make",
+    "Japanese": "作る"
+  },
+  {
+    "id": 7,
+    "English": "put",
+    "Japanese": "置く"
+  },
+  {
+    "id": 8,
+    "English": "seem",
+    "Japanese": "見える / 思える"
+  },
+  {
+    "id": 9,
+    "English": "take",
+    "Japanese": "取る / つかむ"
+  },
+  {
+    "id": 10,
+    "English": "be",
+    "Japanese": "ある / 存在する"
+  },
+  {
+    "id": 11,
+    "English": "do",
+    "Japanese": "する / 振るまう"
+  },
+  {
+    "id": 12,
+    "English": "have",
+    "Japanese": "持っている / 身につけている"
+  },
+  {
+    "id": 13,
+    "English": "say",
+    "Japanese": "言う / 話す / 命ずる"
+  },
+  {
+    "id": 14,
+    "English": "see",
+    "Japanese": "見る / 見える / 知っている"
+  },
+  {
+    "id": 15,
+    "English": "send",
+    "Japanese": "送る"
+  },
+  {
+    "id": 16,
+    "English": "may",
+    "Japanese": "してもいい / かもしれない"
+  },
+  {
+    "id": 17,
+    "English": "will",
+    "Japanese": "するつもりだ / しようと思う"
+  },
+  {
+    "id": 18,
+    "English": "about",
+    "Japanese": "＊＊＊について / ざっと"
+  },
+  {
+    "id": 19,
+    "English": "across",
+    "Japanese": "横切った / 横に"
+  },
+  {
+    "id": 20,
+    "English": "after",
+    "Japanese": "＊＊＊の後に / 後で"
+  },
+  {
+    "id": 21,
+    "English": "against",
+    "Japanese": "反抗して / 逆らって"
+  },
+  {
+    "id": 22,
+    "English": "among",
+    "Japanese": "＊＊＊の間に / ＊＊＊の中で"
+  },
+  {
+    "id": 23,
+    "English": "at",
+    "Japanese": "＊＊＊に / ＊＊＊において"
+  },
+  {
+    "id": 24,
+    "English": "before",
+    "Japanese": "先に / 前に"
+  },
+  {
+    "id": 25,
+    "English": "between",
+    "Japanese": "中間に / 間に"
+  },
+  {
+    "id": 26,
+    "English": "by",
+    "Japanese": "＊＊＊のそばで / ＊＊＊によって"
+  },
+  {
+    "id": 27,
+    "English": "down",
+    "Japanese": "下に / 下へ"
+  },
+  {
+    "id": 28,
+    "English": "from",
+    "Japanese": "＊＊＊から"
+  },
+  {
+    "id": 29,
+    "English": "in",
+    "Japanese": "中に / 内側に"
+  },
+  {
+    "id": 30,
+    "English": "into",
+    "Japanese": "(入った)中に"
+  },
+  {
+    "id": 31,
+    "English": "off",
+    "Japanese": "＊＊＊から離れて"
+  },
+  {
+    "id": 32,
+    "English": "on",
+    "Japanese": "うえに"
+  },
+  {
+    "id": 33,
+    "English": "over",
+    "Japanese": "上の方に"
+  },
+  {
+    "id": 34,
+    "English": "through",
+    "Japanese": "から"
+  },
+  {
+    "id": 35,
+    "English": "to",
+    "Japanese": "＊＊＊へ"
+  },
+  {
+    "id": 36,
+    "English": "under",
+    "Japanese": "＊＊＊の下に"
+  },
+  {
+    "id": 37,
+    "English": "up",
+    "Japanese": "上方へ / 上向きに"
+  },
+  {
+    "id": 38,
+    "English": "with",
+    "Japanese": "いっしょに / ともに"
+  },
+  {
+    "id": 39,
+    "English": "as",
+    "Japanese": "同じように"
+  },
+  {
+    "id": 40,
+    "English": "for",
+    "Japanese": "＊＊＊のために"
+  },
+  {
+    "id": 41,
+    "English": "of",
+    "Japanese": "＊＊＊の / ＊＊＊に属する"
+  },
+  {
+    "id": 42,
+    "English": "till",
+    "Japanese": "＊＊＊まで"
+  },
+  {
+    "id": 43,
+    "English": "than",
+    "Japanese": "＊＊＊よりも"
+  },
+  {
+    "id": 44,
+    "English": "all",
+    "Japanese": "すべて"
+  },
+  {
+    "id": 45,
+    "English": "any",
+    "Japanese": "なんらか / いくらか / 少しは"
+  },
+  {
+    "id": 46,
+    "English": "every",
+    "Japanese": "あらゆる"
+  },
+  {
+    "id": 47,
+    "English": "no",
+    "Japanese": "いいえ / なにも"
+  },
+  {
+    "id": 48,
+    "English": "other",
+    "Japanese": "ほかの"
+  },
+  {
+    "id": 49,
+    "English": "some",
+    "Japanese": "いくつかの"
+  },
+  {
+    "id": 50,
+    "English": "such",
+    "Japanese": "こんな / これほど / しばしば"
+  },
+  {
+    "id": 51,
+    "English": "and",
+    "Japanese": "＊＊＊と"
+  },
+  {
+    "id": 52,
+    "English": "because",
+    "Japanese": "なぜなら"
+  },
+  {
+    "id": 53,
+    "English": "but",
+    "Japanese": "しかし"
+  },
+  {
+    "id": 54,
+    "English": "or",
+    "Japanese": "または"
+  },
+  {
+    "id": 55,
+    "English": "if",
+    "Japanese": "もしも"
+  },
+  {
+    "id": 56,
+    "English": "though",
+    "Japanese": "だが / そうはいうものの"
+  },
+  {
+    "id": 57,
+    "English": "while",
+    "Japanese": "期間 / 時間"
+  },
+  {
+    "id": 58,
+    "English": "how",
+    "Japanese": "方法"
+  },
+  {
+    "id": 59,
+    "English": "when",
+    "Japanese": "時期"
+  },
+  {
+    "id": 60,
+    "English": "where",
+    "Japanese": "場所"
+  },
+  {
+    "id": 61,
+    "English": "why",
+    "Japanese": "理由"
+  },
+  {
+    "id": 62,
+    "English": "again",
+    "Japanese": "さらに / またまた"
+  },
+  {
+    "id": 63,
+    "English": "ever",
+    "Japanese": "つねに / いつも"
+  },
+  {
+    "id": 64,
+    "English": "far",
+    "Japanese": "はるかに / 遠くへ"
+  },
+  {
+    "id": 65,
+    "English": "forward",
+    "Japanese": "前に / 前方へ / お先に"
+  },
+  {
+    "id": 66,
+    "English": "here",
+    "Japanese": "ここに"
+  },
+  {
+    "id": 67,
+    "English": "near",
+    "Japanese": "ほぼ / ほとんど"
+  },
+  {
+    "id": 68,
+    "English": "now",
+    "Japanese": "今 / 今では"
+  },
+  {
+    "id": 69,
+    "English": "out",
+    "Japanese": "外に"
+  },
+  {
+    "id": 70,
+    "English": "still",
+    "Japanese": "静かな / 静止した"
+  },
+  {
+    "id": 71,
+    "English": "then",
+    "Japanese": "それから / 続いて / その次に"
+  },
+  {
+    "id": 72,
+    "English": "there",
+    "Japanese": "そこに / あそこで"
+  },
+  {
+    "id": 73,
+    "English": "together",
+    "Japanese": "同時に / ともに"
+  },
+  {
+    "id": 74,
+    "English": "well",
+    "Japanese": "よく"
+  },
+  {
+    "id": 75,
+    "English": "almost",
+    "Japanese": "ほぼ / ほとんど"
+  },
+  {
+    "id": 76,
+    "English": "enough",
+    "Japanese": "十分 / たくさん"
+  },
+  {
+    "id": 77,
+    "English": "even",
+    "Japanese": "均等な / 同じの"
+  },
+  {
+    "id": 78,
+    "English": "little",
+    "Japanese": "わずか"
+  },
+  {
+    "id": 79,
+    "English": "much",
+    "Japanese": "ほぼ"
+  },
+  {
+    "id": 80,
+    "English": "only",
+    "Japanese": "ただひとり / ただひとつ"
+  },
+  {
+    "id": 81,
+    "English": "quite",
+    "Japanese": "すっかり / 全く"
+  },
+  {
+    "id": 82,
+    "English": "so",
+    "Japanese": "現に / それは"
+  },
+  {
+    "id": 83,
+    "English": "very",
+    "Japanese": "とても / いとも / いっそう"
+  },
+  {
+    "id": 84,
+    "English": "tomorrow",
+    "Japanese": "あす / あした"
+  },
+  {
+    "id": 85,
+    "English": "yesterday",
+    "Japanese": "昨日"
+  },
+  {
+    "id": 86,
+    "English": "north",
+    "Japanese": "北"
+  },
+  {
+    "id": 87,
+    "English": "south",
+    "Japanese": "南"
+  },
+  {
+    "id": 88,
+    "English": "east",
+    "Japanese": "東"
+  },
+  {
+    "id": 89,
+    "English": "west",
+    "Japanese": "西"
+  },
+  {
+    "id": 90,
+    "English": "please",
+    "Japanese": "喜ばせる / 楽します"
+  },
+  {
+    "id": 91,
+    "English": "yes",
+    "Japanese": "肯定的な返答"
+  },
+  {
+    "id": 92,
+    "English": "account",
+    "Japanese": "説明"
+  },
+  {
+    "id": 93,
+    "English": "act",
+    "Japanese": "行動する / 立ち振る舞う"
+  },
+  {
+    "id": 94,
+    "English": "according to",
+    "Japanese": "＊＊＊によれば"
+  },
+  {
+    "id": 95,
+    "English": "addition",
+    "Japanese": "付け足し"
+  },
+  {
+    "id": 96,
+    "English": "adjustment",
+    "Japanese": "手直し / 修正 / 変更"
+  },
+  {
+    "id": 97,
+    "English": "advertisement",
+    "Japanese": "アド / 広告"
+  },
+  {
+    "id": 98,
+    "English": "agreement",
+    "Japanese": "協定 / 一致"
+  },
+  {
+    "id": 99,
+    "English": "air",
+    "Japanese": "空気 / 飛行"
+  },
+  {
+    "id": 100,
+    "English": "amount",
+    "Japanese": "量 / 計測した大きさ"
+  },
+  {
+    "id": 101,
+    "English": "amusement",
+    "Japanese": "楽しみ / エンターテインメント"
+  },
+  {
+    "id": 102,
+    "English": "animal",
+    "Japanese": "動物"
+  },
+  {
+    "id": 103,
+    "English": "answer",
+    "Japanese": "答える / 解答"
+  },
+  {
+    "id": 104,
+    "English": "approval",
+    "Japanese": "賛成 / 承認"
+  },
+  {
+    "id": 105,
+    "English": "argument",
+    "Japanese": "議論 / 主張"
+  },
+  {
+    "id": 106,
+    "English": "art",
+    "Japanese": "芸術 / 工芸"
+  },
+  {
+    "id": 107,
+    "English": "attack",
+    "Japanese": "攻める / 取り掛かる"
+  },
+  {
+    "id": 108,
+    "English": "attempt",
+    "Japanese": "試みる / 企てる"
+  },
+  {
+    "id": 109,
+    "English": "attention",
+    "Japanese": "注意 / 世話"
+  },
+  {
+    "id": 110,
+    "English": "attraction",
+    "Japanese": "魅力 / 引力"
+  },
+  {
+    "id": 111,
+    "English": "authority",
+    "Japanese": "権威 / 認可"
+  },
+  {
+    "id": 112,
+    "English": "back",
+    "Japanese": "以前に / 昔に"
+  },
+  {
+    "id": 113,
+    "English": "balance",
+    "Japanese": "バランスをとる / つりあいを取る"
+  },
+  {
+    "id": 114,
+    "English": "base",
+    "Japanese": "基礎づける / 基づく"
+  },
+  {
+    "id": 115,
+    "English": "behaviour",
+    "Japanese": "行儀 / 行ない / 振る舞い"
+  },
+  {
+    "id": 116,
+    "English": "belief",
+    "Japanese": "印象 / 感じ / 気分"
+  },
+  {
+    "id": 117,
+    "English": "birth",
+    "Japanese": "生みだす / 産む"
+  },
+  {
+    "id": 118,
+    "English": "bit",
+    "Japanese": "かけら"
+  },
+  {
+    "id": 119,
+    "English": "bite",
+    "Japanese": "かみつく"
+  },
+  {
+    "id": 120,
+    "English": "blood",
+    "Japanese": "血液 / 気質"
+  },
+  {
+    "id": 121,
+    "English": "blow",
+    "Japanese": "吹く / 噴く"
+  },
+  {
+    "id": 122,
+    "English": "body",
+    "Japanese": "本体 / 身体"
+  },
+  {
+    "id": 123,
+    "English": "breath",
+    "Japanese": "呼吸 / 息"
+  },
+  {
+    "id": 124,
+    "English": "brother",
+    "Japanese": "兄 / 弟 / 兄弟"
+  },
+  {
+    "id": 125,
+    "English": "building",
+    "Japanese": "建設 / 構築"
+  },
+  {
+    "id": 126,
+    "English": "burn",
+    "Japanese": "燃す / 焦がす"
+  },
+  {
+    "id": 127,
+    "English": "burst",
+    "Japanese": "爆発 / 破裂"
+  },
+  {
+    "id": 128,
+    "English": "business",
+    "Japanese": "シゴト / 事業"
+  },
+  {
+    "id": 129,
+    "English": "care",
+    "Japanese": "整備 / メンテナンス / 世話"
+  },
+  {
+    "id": 130,
+    "English": "cause",
+    "Japanese": "原因 / 根拠"
+  },
+  {
+    "id": 131,
+    "English": "chance",
+    "Japanese": "賭け / チャンス / 機会"
+  },
+  {
+    "id": 132,
+    "English": "change",
+    "Japanese": "変質 / 変化"
+  },
+  {
+    "id": 133,
+    "English": "cloth",
+    "Japanese": "生地 / 布地"
+  },
+  {
+    "id": 134,
+    "English": "color",
+    "Japanese": "色合い / 個性"
+  },
+  {
+    "id": 135,
+    "English": "comfort",
+    "Japanese": "快適 / なぐさめ"
+  },
+  {
+    "id": 136,
+    "English": "committee",
+    "Japanese": "コミッティ / 委員会"
+  },
+  {
+    "id": 137,
+    "English": "company",
+    "Japanese": "付添い / 会社"
+  },
+  {
+    "id": 138,
+    "English": "comparison",
+    "Japanese": "比較"
+  },
+  {
+    "id": 139,
+    "English": "competition",
+    "Japanese": "競争 / 競技"
+  },
+  {
+    "id": 140,
+    "English": "condition",
+    "Japanese": "条件 / 状態"
+  },
+  {
+    "id": 141,
+    "English": "connection",
+    "Japanese": "結びつき / 関係"
+  },
+  {
+    "id": 142,
+    "English": "control",
+    "Japanese": "制御する / 取り締まる"
+  },
+  {
+    "id": 143,
+    "English": "cook",
+    "Japanese": "炊事する / 料理する"
+  },
+  {
+    "id": 144,
+    "English": "copper",
+    "Japanese": "銅 / 銅製 / 銅色"
+  },
+  {
+    "id": 145,
+    "English": "copy",
+    "Japanese": "コピー / 再現 / 複製"
+  },
+  {
+    "id": 146,
+    "English": "cotton",
+    "Japanese": "綿 / コットン"
+  },
+  {
+    "id": 147,
+    "English": "cough",
+    "Japanese": "せき"
+  },
+  {
+    "id": 148,
+    "English": "country",
+    "Japanese": "国家 / 国民 / いなか"
+  },
+  {
+    "id": 149,
+    "English": "cover",
+    "Japanese": "おおう / かぶせる"
+  },
+  {
+    "id": 150,
+    "English": "crack",
+    "Japanese": "ひびわれる"
+  },
+  {
+    "id": 151,
+    "English": "credit",
+    "Japanese": "信用 / 業績"
+  },
+  {
+    "id": 152,
+    "English": "crime",
+    "Japanese": "犯罪"
+  },
+  {
+    "id": 153,
+    "English": "crush",
+    "Japanese": "壊れる / つぶれる"
+  },
+  {
+    "id": 154,
+    "English": "cry",
+    "Japanese": "めそめそする / 泣く"
+  },
+  {
+    "id": 155,
+    "English": "current",
+    "Japanese": "流れ / 水流 / 電流"
+  },
+  {
+    "id": 156,
+    "English": "curve",
+    "Japanese": "曲がる"
+  },
+  {
+    "id": 157,
+    "English": "damage",
+    "Japanese": "そこなう / 傷める"
+  },
+  {
+    "id": 158,
+    "English": "danger",
+    "Japanese": "リスク / 危険"
+  },
+  {
+    "id": 159,
+    "English": "daughter",
+    "Japanese": "娘 / 令嬢"
+  },
+  {
+    "id": 160,
+    "English": "day",
+    "Japanese": "昼間 / 日 / 機会"
+  },
+  {
+    "id": 161,
+    "English": "death",
+    "Japanese": "絶命 / 死亡"
+  },
+  {
+    "id": 162,
+    "English": "debt",
+    "Japanese": "負債 / 借り"
+  },
+  {
+    "id": 163,
+    "English": "decision",
+    "Japanese": "判断 / 結論"
+  },
+  {
+    "id": 164,
+    "English": "degree",
+    "Japanese": "レベル / 学位 / 角度"
+  },
+  {
+    "id": 165,
+    "English": "design",
+    "Japanese": "計画 / 設計 / デザイン"
+  },
+  {
+    "id": 166,
+    "English": "desire",
+    "Japanese": "欲しがる / 希望 / 願望"
+  },
+  {
+    "id": 167,
+    "English": "destruction",
+    "Japanese": "撃滅 / 破壊"
+  },
+  {
+    "id": 168,
+    "English": "detail",
+    "Japanese": "詳しく述べる"
+  },
+  {
+    "id": 169,
+    "English": "development",
+    "Japanese": "発展 / 開発"
+  },
+  {
+    "id": 170,
+    "English": "direction",
+    "Japanese": "舵取り / 指示 / ガイド"
+  },
+  {
+    "id": 171,
+    "English": "discovery",
+    "Japanese": "発見"
+  },
+  {
+    "id": 172,
+    "English": "discussion",
+    "Japanese": "話し合い / ディスカッション"
+  },
+  {
+    "id": 173,
+    "English": "disease",
+    "Japanese": "不快な状態 / 病気"
+  },
+  {
+    "id": 174,
+    "English": "disgust",
+    "Japanese": "吐き気を催させる / 胸を悪くさせる"
+  },
+  {
+    "id": 175,
+    "English": "distance",
+    "Japanese": "引き離す"
+  },
+  {
+    "id": 176,
+    "English": "distribution",
+    "Japanese": "配布 / 流通"
+  },
+  {
+    "id": 177,
+    "English": "division",
+    "Japanese": "分割 / 分裂"
+  },
+  {
+    "id": 178,
+    "English": "doubt",
+    "Japanese": "怪しむ / 疑う"
+  },
+  {
+    "id": 179,
+    "English": "drink",
+    "Japanese": "飲む"
+  },
+  {
+    "id": 180,
+    "English": "driving",
+    "Japanese": "運転"
+  },
+  {
+    "id": 181,
+    "English": "dust",
+    "Japanese": "散らかす"
+  },
+  {
+    "id": 182,
+    "English": "earth",
+    "Japanese": "地球 / 大地"
+  },
+  {
+    "id": 183,
+    "English": "edge",
+    "Japanese": "刃 / 境界"
+  },
+  {
+    "id": 184,
+    "English": "education",
+    "Japanese": "教育 / エデュケーション"
+  },
+  {
+    "id": 185,
+    "English": "effect",
+    "Japanese": "結果 / 影響"
+  },
+  {
+    "id": 186,
+    "English": "end",
+    "Japanese": "終える / 打ち切る"
+  },
+  {
+    "id": 187,
+    "English": "error",
+    "Japanese": "間違い / 誤り / エラー"
+  },
+  {
+    "id": 188,
+    "English": "event",
+    "Japanese": "できごと / イベント"
+  },
+  {
+    "id": 189,
+    "English": "example",
+    "Japanese": "見本 / 例題"
+  },
+  {
+    "id": 190,
+    "English": "exchange",
+    "Japanese": "取り替える / 交換する"
+  },
+  {
+    "id": 191,
+    "English": "existence",
+    "Japanese": "存在 / 生存"
+  },
+  {
+    "id": 192,
+    "English": "expansion",
+    "Japanese": "引き伸ばし / 拡大"
+  },
+  {
+    "id": 193,
+    "English": "experience",
+    "Japanese": "経験 / 体験"
+  },
+  {
+    "id": 194,
+    "English": "expert",
+    "Japanese": "専門家 / 熟練者"
+  },
+  {
+    "id": 195,
+    "English": "fact",
+    "Japanese": "事実 / できごと"
+  },
+  {
+    "id": 196,
+    "English": "fall",
+    "Japanese": "落ちる"
+  },
+  {
+    "id": 197,
+    "English": "family",
+    "Japanese": "家族 / 一族"
+  },
+  {
+    "id": 198,
+    "English": "father",
+    "Japanese": "父親"
+  },
+  {
+    "id": 199,
+    "English": "fear",
+    "Japanese": "恐怖 / 恐れ"
+  },
+  {
+    "id": 200,
+    "English": "feeling",
+    "Japanese": "感じ / 気持"
+  },
+  {
+    "id": 201,
+    "English": "fiction",
+    "Japanese": "作り話"
+  },
+  {
+    "id": 202,
+    "English": "field",
+    "Japanese": "野原 / 畑 / 一面の広がり"
+  },
+  {
+    "id": 203,
+    "English": "fight",
+    "Japanese": "ファイト / 戦い"
+  },
+  {
+    "id": 204,
+    "English": "fire",
+    "Japanese": "焼く"
+  },
+  {
+    "id": 205,
+    "English": "flame",
+    "Japanese": "火炎"
+  },
+  {
+    "id": 206,
+    "English": "flight",
+    "Japanese": "飛行 / 脱出"
+  },
+  {
+    "id": 207,
+    "English": "flower",
+    "Japanese": "花を咲かす"
+  },
+  {
+    "id": 208,
+    "English": "fold",
+    "Japanese": "折りたたむ / 巻きつける"
+  },
+  {
+    "id": 209,
+    "English": "food",
+    "Japanese": "食べ物 / 栄養物"
+  },
+  {
+    "id": 210,
+    "English": "force",
+    "Japanese": "勢い / 力"
+  },
+  {
+    "id": 211,
+    "English": "form",
+    "Japanese": "形姿 / 外形 / 形"
+  },
+  {
+    "id": 212,
+    "English": "friend",
+    "Japanese": "友達"
+  },
+  {
+    "id": 213,
+    "English": "front",
+    "Japanese": "正面 / 前面"
+  },
+  {
+    "id": 214,
+    "English": "fruit",
+    "Japanese": "くだもの"
+  },
+  {
+    "id": 215,
+    "English": "glass",
+    "Japanese": "ガラス / グラス"
+  },
+  {
+    "id": 216,
+    "English": "gold",
+    "Japanese": "黄金 / ゴールド"
+  },
+  {
+    "id": 217,
+    "English": "government",
+    "Japanese": "統治すること / 支配 / 政府"
+  },
+  {
+    "id": 218,
+    "English": "grain",
+    "Japanese": "穀物 / ひと粒"
+  },
+  {
+    "id": 219,
+    "English": "grass",
+    "Japanese": "芝生 / 牧草"
+  },
+  {
+    "id": 220,
+    "English": "grip",
+    "Japanese": "取っ手 / 握ること"
+  },
+  {
+    "id": 221,
+    "English": "group",
+    "Japanese": "集まり / 集り / グループ"
+  },
+  {
+    "id": 222,
+    "English": "growth",
+    "Japanese": "成長 / 生育"
+  },
+  {
+    "id": 223,
+    "English": "guide",
+    "Japanese": "案内する / 手引きする"
+  },
+  {
+    "id": 224,
+    "English": "harbor",
+    "Japanese": "港 / 避難所"
+  },
+  {
+    "id": 225,
+    "English": "harmony",
+    "Japanese": "調和 / ハーモニー"
+  },
+  {
+    "id": 226,
+    "English": "hate",
+    "Japanese": "うらむ / 憎む"
+  },
+  {
+    "id": 227,
+    "English": "hearing",
+    "Japanese": "聞くこと / 聴覚"
+  },
+  {
+    "id": 228,
+    "English": "heat",
+    "Japanese": "暖める / 熱する"
+  },
+  {
+    "id": 229,
+    "English": "help",
+    "Japanese": "助ける / 役立つ"
+  },
+  {
+    "id": 230,
+    "English": "history",
+    "Japanese": "歴史 / 記録"
+  },
+  {
+    "id": 231,
+    "English": "hole",
+    "Japanese": "穴 / くぼみ / 欠点"
+  },
+  {
+    "id": 232,
+    "English": "hope",
+    "Japanese": "実現させたいと願う"
+  },
+  {
+    "id": 233,
+    "English": "hour",
+    "Japanese": "時間 / 60分"
+  },
+  {
+    "id": 234,
+    "English": "humor",
+    "Japanese": "ユーモア / おかしさ / 気持ち"
+  },
+  {
+    "id": 235,
+    "English": "ice",
+    "Japanese": "氷"
+  },
+  {
+    "id": 236,
+    "English": "idea",
+    "Japanese": "着想 / アタマに浮かんだ考え / 意見"
+  },
+  {
+    "id": 237,
+    "English": "impulse",
+    "Japanese": "衝動 / 刺激 / 推進力"
+  },
+  {
+    "id": 238,
+    "English": "increase",
+    "Japanese": "増やす / 増益 / 増加"
+  },
+  {
+    "id": 239,
+    "English": "industry",
+    "Japanese": "産業 / 工業"
+  },
+  {
+    "id": 240,
+    "English": "ink",
+    "Japanese": "インク"
+  },
+  {
+    "id": 241,
+    "English": "insect",
+    "Japanese": "虫 / 昆虫"
+  },
+  {
+    "id": 242,
+    "English": "instrument",
+    "Japanese": "器具 / 道具 / 工具 / 楽器"
+  },
+  {
+    "id": 243,
+    "English": "insurance",
+    "Japanese": "保険 / 備え"
+  },
+  {
+    "id": 244,
+    "English": "interest",
+    "Japanese": "気晴らし / 興味 / 関心事"
+  },
+  {
+    "id": 245,
+    "English": "invention",
+    "Japanese": "考案 / 発明"
+  },
+  {
+    "id": 246,
+    "English": "iron",
+    "Japanese": "鉄 / アイロン"
+  },
+  {
+    "id": 247,
+    "English": "jelly",
+    "Japanese": "ゼリー化する"
+  },
+  {
+    "id": 248,
+    "English": "join",
+    "Japanese": "交わる / 連結"
+  },
+  {
+    "id": 249,
+    "English": "journey",
+    "Japanese": "旅行 / 旅路"
+  },
+  {
+    "id": 250,
+    "English": "judge",
+    "Japanese": "判断する / 評価する"
+  },
+  {
+    "id": 251,
+    "English": "jump",
+    "Japanese": "跳躍する / ジャンプ"
+  },
+  {
+    "id": 252,
+    "English": "kick",
+    "Japanese": "蹴り / キック"
+  },
+  {
+    "id": 253,
+    "English": "kiss",
+    "Japanese": "くちづけ"
+  },
+  {
+    "id": 254,
+    "English": "knowledge",
+    "Japanese": "知識 / 認識 / 認知"
+  },
+  {
+    "id": 255,
+    "English": "land",
+    "Japanese": "土地 / 地面"
+  },
+  {
+    "id": 256,
+    "English": "language",
+    "Japanese": "言語"
+  },
+  {
+    "id": 257,
+    "English": "laugh",
+    "Japanese": "笑う / 笑む"
+  },
+  {
+    "id": 258,
+    "English": "law",
+    "Japanese": "法律"
+  },
+  {
+    "id": 259,
+    "English": "lead",
+    "Japanese": "導く / 誘導"
+  },
+  {
+    "id": 260,
+    "English": "learning",
+    "Japanese": "修得 / 学習"
+  },
+  {
+    "id": 261,
+    "English": "letter",
+    "Japanese": "便り / 手紙"
+  },
+  {
+    "id": 262,
+    "English": "level",
+    "Japanese": "水平になる / 水平飛行に移る"
+  },
+  {
+    "id": 263,
+    "English": "lift",
+    "Japanese": "持ち上げる"
+  },
+  {
+    "id": 264,
+    "English": "light",
+    "Japanese": "明るい / 明らか"
+  },
+  {
+    "id": 265,
+    "English": "limit",
+    "Japanese": "制約 / 押さえる"
+  },
+  {
+    "id": 266,
+    "English": "liquid",
+    "Japanese": "液体"
+  },
+  {
+    "id": 267,
+    "English": "list",
+    "Japanese": "挙げる / 列挙する"
+  },
+  {
+    "id": 268,
+    "English": "look",
+    "Japanese": "見える / みえる"
+  },
+  {
+    "id": 269,
+    "English": "loss",
+    "Japanese": "敗北"
+  },
+  {
+    "id": 270,
+    "English": "love",
+    "Japanese": "愛情"
+  },
+  {
+    "id": 271,
+    "English": "machine",
+    "Japanese": "機械 / マシン"
+  },
+  {
+    "id": 272,
+    "English": "man",
+    "Japanese": "人間 / 男性"
+  },
+  {
+    "id": 273,
+    "English": "manager",
+    "Japanese": "管理職 / 経営者"
+  },
+  {
+    "id": 274,
+    "English": "mark",
+    "Japanese": "目印 / 目標"
+  },
+  {
+    "id": 275,
+    "English": "market",
+    "Japanese": "市場"
+  },
+  {
+    "id": 276,
+    "English": "mass",
+    "Japanese": "大きな塊 / 集団"
+  },
+  {
+    "id": 277,
+    "English": "meal",
+    "Japanese": "食事"
+  },
+  {
+    "id": 278,
+    "English": "measure",
+    "Japanese": "計測する / 基準に照らして判断する"
+  },
+  {
+    "id": 279,
+    "English": "meat",
+    "Japanese": "肉 / 中身"
+  },
+  {
+    "id": 280,
+    "English": "meeting",
+    "Japanese": "集まり / 集合"
+  },
+  {
+    "id": 281,
+    "English": "memory",
+    "Japanese": "記憶 / 記憶力"
+  },
+  {
+    "id": 282,
+    "English": "metal",
+    "Japanese": "メタリック / 金属的"
+  },
+  {
+    "id": 283,
+    "English": "middle",
+    "Japanese": "中位"
+  },
+  {
+    "id": 284,
+    "English": "milk",
+    "Japanese": "牛乳"
+  },
+  {
+    "id": 285,
+    "English": "mind",
+    "Japanese": "気持ち / 心 / 精神"
+  },
+  {
+    "id": 286,
+    "English": "mine",
+    "Japanese": "私の"
+  },
+  {
+    "id": 287,
+    "English": "minute",
+    "Japanese": "分 / 1分"
+  },
+  {
+    "id": 288,
+    "English": "mist",
+    "Japanese": "霧 / かすみ"
+  },
+  {
+    "id": 289,
+    "English": "money",
+    "Japanese": "硬貨 / お金"
+  },
+  {
+    "id": 290,
+    "English": "month",
+    "Japanese": "月"
+  },
+  {
+    "id": 291,
+    "English": "morning",
+    "Japanese": "朝"
+  },
+  {
+    "id": 292,
+    "English": "mother",
+    "Japanese": "母親"
+  },
+  {
+    "id": 293,
+    "English": "motion",
+    "Japanese": "動き / 移動"
+  },
+  {
+    "id": 294,
+    "English": "mountain",
+    "Japanese": "山 / 山岳"
+  },
+  {
+    "id": 295,
+    "English": "move",
+    "Japanese": "動く"
+  },
+  {
+    "id": 296,
+    "English": "music",
+    "Japanese": "ミュージック / 音楽"
+  },
+  {
+    "id": 297,
+    "English": "name",
+    "Japanese": "名前"
+  },
+  {
+    "id": 298,
+    "English": "nation",
+    "Japanese": "国家 / 国民"
+  },
+  {
+    "id": 299,
+    "English": "need",
+    "Japanese": "動機 / 必要性"
+  },
+  {
+    "id": 300,
+    "English": "news",
+    "Japanese": "ニュース / 報道"
+  },
+  {
+    "id": 301,
+    "English": "night",
+    "Japanese": "夜"
+  },
+  {
+    "id": 302,
+    "English": "noise",
+    "Japanese": "騒ぐ"
+  },
+  {
+    "id": 303,
+    "English": "note",
+    "Japanese": "記録 / 通達"
+  },
+  {
+    "id": 304,
+    "English": "number",
+    "Japanese": "数 / 人数 / 個数"
+  },
+  {
+    "id": 305,
+    "English": "observation",
+    "Japanese": "観測 / 観察"
+  },
+  {
+    "id": 306,
+    "English": "offer",
+    "Japanese": "提供する / 提案する"
+  },
+  {
+    "id": 307,
+    "English": "oil",
+    "Japanese": "オイル / 油"
+  },
+  {
+    "id": 308,
+    "English": "operation",
+    "Japanese": "運転 / 運用"
+  },
+  {
+    "id": 309,
+    "English": "opinion",
+    "Japanese": "意見 / 持論"
+  },
+  {
+    "id": 310,
+    "English": "order",
+    "Japanese": "配列 / 順序"
+  },
+  {
+    "id": 311,
+    "English": "organization",
+    "Japanese": "設立 / 組織"
+  },
+  {
+    "id": 312,
+    "English": "ornament",
+    "Japanese": "装飾 / 飾り"
+  },
+  {
+    "id": 313,
+    "English": "owner",
+    "Japanese": "持主"
+  },
+  {
+    "id": 314,
+    "English": "page",
+    "Japanese": "ページ"
+  },
+  {
+    "id": 315,
+    "English": "pain",
+    "Japanese": "痛み"
+  },
+  {
+    "id": 316,
+    "English": "paint",
+    "Japanese": "色つけ / 塗装"
+  },
+  {
+    "id": 317,
+    "English": "paper",
+    "Japanese": "紙"
+  },
+  {
+    "id": 318,
+    "English": "part",
+    "Japanese": "ある程度 / 一部分は"
+  },
+  {
+    "id": 319,
+    "English": "paste",
+    "Japanese": "貼りつける"
+  },
+  {
+    "id": 320,
+    "English": "payment",
+    "Japanese": "入金 / 払出"
+  },
+  {
+    "id": 321,
+    "English": "peace",
+    "Japanese": "和平 / 安らぎ"
+  },
+  {
+    "id": 322,
+    "English": "person",
+    "Japanese": "個人 / 人間"
+  },
+  {
+    "id": 323,
+    "English": "place",
+    "Japanese": "場所 / 地位"
+  },
+  {
+    "id": 324,
+    "English": "plant",
+    "Japanese": "植物 / 草木"
+  },
+  {
+    "id": 325,
+    "English": "play",
+    "Japanese": "遊ぶ / 試合する / 演奏する"
+  },
+  {
+    "id": 326,
+    "English": "pleasure",
+    "Japanese": "喜び / 快楽"
+  },
+  {
+    "id": 327,
+    "English": "point",
+    "Japanese": "点 / 地点 / 得点 / 先端"
+  },
+  {
+    "id": 328,
+    "English": "poison",
+    "Japanese": "毒"
+  },
+  {
+    "id": 329,
+    "English": "polish",
+    "Japanese": "磨る / 研ぐ"
+  },
+  {
+    "id": 330,
+    "English": "porter",
+    "Japanese": "運搬人 / 門番"
+  },
+  {
+    "id": 331,
+    "English": "position",
+    "Japanese": "場所 / 立場"
+  },
+  {
+    "id": 332,
+    "English": "powder",
+    "Japanese": "粉 / 粉末"
+  },
+  {
+    "id": 333,
+    "English": "power",
+    "Japanese": "力 / 権力 / 原動力"
+  },
+  {
+    "id": 334,
+    "English": "price",
+    "Japanese": "価格 / 代償"
+  },
+  {
+    "id": 335,
+    "English": "print",
+    "Japanese": "印刷 / 発行"
+  },
+  {
+    "id": 336,
+    "English": "process",
+    "Japanese": "過程 / プロセス"
+  },
+  {
+    "id": 337,
+    "English": "produce",
+    "Japanese": "生産する / 創作する"
+  },
+  {
+    "id": 338,
+    "English": "profit",
+    "Japanese": "得する / 儲ける"
+  },
+  {
+    "id": 339,
+    "English": "property",
+    "Japanese": "所有物 / 不動産 / 特性"
+  },
+  {
+    "id": 340,
+    "English": "prose",
+    "Japanese": "散文"
+  },
+  {
+    "id": 341,
+    "English": "protest",
+    "Japanese": "断言する / 主張する / 抗議する"
+  },
+  {
+    "id": 342,
+    "English": "pull",
+    "Japanese": "引っぱる"
+  },
+  {
+    "id": 343,
+    "English": "punishment",
+    "Japanese": "処罰 / 制裁"
+  },
+  {
+    "id": 344,
+    "English": "purpose",
+    "Japanese": "目的 / 用途"
+  },
+  {
+    "id": 345,
+    "English": "push",
+    "Japanese": "押す"
+  },
+  {
+    "id": 346,
+    "English": "quality",
+    "Japanese": "品質"
+  },
+  {
+    "id": 347,
+    "English": "question",
+    "Japanese": "問いただす / たずねる"
+  },
+  {
+    "id": 348,
+    "English": "rain",
+    "Japanese": "雨が降る"
+  },
+  {
+    "id": 349,
+    "English": "range",
+    "Japanese": "範囲"
+  },
+  {
+    "id": 350,
+    "English": "rate",
+    "Japanese": "割合 / 速度"
+  },
+  {
+    "id": 351,
+    "English": "ray",
+    "Japanese": "光線"
+  },
+  {
+    "id": 352,
+    "English": "reaction",
+    "Japanese": "反応 / 手応え"
+  },
+  {
+    "id": 353,
+    "English": "reading",
+    "Japanese": "読み取り"
+  },
+  {
+    "id": 354,
+    "English": "reason",
+    "Japanese": "推論 / 理由"
+  },
+  {
+    "id": 355,
+    "English": "record",
+    "Japanese": "レコード / 記録 / 成績"
+  },
+  {
+    "id": 356,
+    "English": "regret",
+    "Japanese": "惜しむ / 悔やむ"
+  },
+  {
+    "id": 357,
+    "English": "relation",
+    "Japanese": "結付き / 関係"
+  },
+  {
+    "id": 358,
+    "English": "religion",
+    "Japanese": "信仰 / 信条"
+  },
+  {
+    "id": 359,
+    "English": "representative",
+    "Japanese": "代表する"
+  },
+  {
+    "id": 360,
+    "English": "request",
+    "Japanese": "要求 / 頼む"
+  },
+  {
+    "id": 361,
+    "English": "respect",
+    "Japanese": "尊敬 / 評価"
+  },
+  {
+    "id": 362,
+    "English": "rest",
+    "Japanese": "休む / 休息する"
+  },
+  {
+    "id": 363,
+    "English": "reward",
+    "Japanese": "報いる"
+  },
+  {
+    "id": 364,
+    "English": "rhythm",
+    "Japanese": "リズム / 拍子"
+  },
+  {
+    "id": 365,
+    "English": "rice",
+    "Japanese": "おコメ"
+  },
+  {
+    "id": 366,
+    "English": "river",
+    "Japanese": "川"
+  },
+  {
+    "id": 367,
+    "English": "road",
+    "Japanese": "道筋 / 道路"
+  },
+  {
+    "id": 368,
+    "English": "roll",
+    "Japanese": "転がる / 転がす"
+  },
+  {
+    "id": 369,
+    "English": "room",
+    "Japanese": "部屋"
+  },
+  {
+    "id": 370,
+    "English": "rub",
+    "Japanese": "こする / 摩擦する"
+  },
+  {
+    "id": 371,
+    "English": "rule",
+    "Japanese": "ルール / 規則"
+  },
+  {
+    "id": 372,
+    "English": "run",
+    "Japanese": "走る"
+  },
+  {
+    "id": 373,
+    "English": "salt",
+    "Japanese": "塩"
+  },
+  {
+    "id": 374,
+    "English": "sand",
+    "Japanese": "砂"
+  },
+  {
+    "id": 375,
+    "English": "scale",
+    "Japanese": "目盛り / ものさし / 段階"
+  },
+  {
+    "id": 376,
+    "English": "science",
+    "Japanese": "科学"
+  },
+  {
+    "id": 377,
+    "English": "sea",
+    "Japanese": "海"
+  },
+  {
+    "id": 378,
+    "English": "seat",
+    "Japanese": "着席させる"
+  },
+  {
+    "id": 379,
+    "English": "secretary",
+    "Japanese": "事務官 / 秘書 / 書記"
+  },
+  {
+    "id": 380,
+    "English": "selection",
+    "Japanese": "選択 / より抜き"
+  },
+  {
+    "id": 381,
+    "English": "self",
+    "Japanese": "自分 / 自身"
+  },
+  {
+    "id": 382,
+    "English": "sense",
+    "Japanese": "感覚 / 気持ち"
+  },
+  {
+    "id": 383,
+    "English": "servant",
+    "Japanese": "使用人"
+  },
+  {
+    "id": 384,
+    "English": "sex",
+    "Japanese": "性別"
+  },
+  {
+    "id": 385,
+    "English": "shade",
+    "Japanese": "影 / 傘 / 濃淡"
+  },
+  {
+    "id": 386,
+    "English": "shake",
+    "Japanese": "振る / ゆり動かす"
+  },
+  {
+    "id": 387,
+    "English": "shame",
+    "Japanese": "恥 / 恥ずかしさ"
+  },
+  {
+    "id": 388,
+    "English": "shock",
+    "Japanese": "ショック / 衝撃"
+  },
+  {
+    "id": 389,
+    "English": "side",
+    "Japanese": "片面 / 片側"
+  },
+  {
+    "id": 390,
+    "English": "sign",
+    "Japanese": "記号 / 合図 / 標識 / 看板"
+  },
+  {
+    "id": 391,
+    "English": "silk",
+    "Japanese": "絹糸 / シルク / 絹布"
+  },
+  {
+    "id": 392,
+    "English": "silver",
+    "Japanese": "銀 / 銀製品 / 銀色"
+  },
+  {
+    "id": 393,
+    "English": "sister",
+    "Japanese": "姉妹 / 姉 / 妹"
+  },
+  {
+    "id": 394,
+    "English": "size",
+    "Japanese": "サイズ"
+  },
+  {
+    "id": 395,
+    "English": "sky",
+    "Japanese": "空"
+  },
+  {
+    "id": 396,
+    "English": "sleep",
+    "Japanese": "眠る"
+  },
+  {
+    "id": 397,
+    "English": "slip",
+    "Japanese": "すべる / すべらせる"
+  },
+  {
+    "id": 398,
+    "English": "slope",
+    "Japanese": "傾ける"
+  },
+  {
+    "id": 399,
+    "English": "smash",
+    "Japanese": "打ち付ける / 打ち壊す"
+  },
+  {
+    "id": 400,
+    "English": "smell",
+    "Japanese": "においがする / においをかぐ"
+  },
+  {
+    "id": 401,
+    "English": "smile",
+    "Japanese": "ほほ笑む"
+  },
+  {
+    "id": 402,
+    "English": "smoke",
+    "Japanese": "煙を出す / タバコを吸う"
+  },
+  {
+    "id": 403,
+    "English": "sneeze",
+    "Japanese": "くしゃみをする"
+  },
+  {
+    "id": 404,
+    "English": "snow",
+    "Japanese": "雪が降る"
+  },
+  {
+    "id": 405,
+    "English": "soap",
+    "Japanese": "せっけん / 洗剤"
+  },
+  {
+    "id": 406,
+    "English": "society",
+    "Japanese": "世界 / 社会"
+  },
+  {
+    "id": 407,
+    "English": "son",
+    "Japanese": "息子"
+  },
+  {
+    "id": 408,
+    "English": "song",
+    "Japanese": "歌 / 歌唱"
+  },
+  {
+    "id": 409,
+    "English": "sort",
+    "Japanese": "分類する / 整列させる"
+  },
+  {
+    "id": 410,
+    "English": "sound",
+    "Japanese": "鳴る / 響く"
+  },
+  {
+    "id": 411,
+    "English": "soup",
+    "Japanese": "スープ"
+  },
+  {
+    "id": 412,
+    "English": "space",
+    "Japanese": "スペース / 空間"
+  },
+  {
+    "id": 413,
+    "English": "stage",
+    "Japanese": "区間 / 舞台"
+  },
+  {
+    "id": 414,
+    "English": "start",
+    "Japanese": "開始 / 着手"
+  },
+  {
+    "id": 415,
+    "English": "statement",
+    "Japanese": "述べる / 声明"
+  },
+  {
+    "id": 416,
+    "English": "steam",
+    "Japanese": "蒸す / 蒸らす"
+  },
+  {
+    "id": 417,
+    "English": "steel",
+    "Japanese": "鋼鉄"
+  },
+  {
+    "id": 418,
+    "English": "step",
+    "Japanese": "段 / 段階 / 階段"
+  },
+  {
+    "id": 419,
+    "English": "stitch",
+    "Japanese": "ぬい合わせる"
+  },
+  {
+    "id": 420,
+    "English": "stone",
+    "Japanese": "石"
+  },
+  {
+    "id": 421,
+    "English": "stop",
+    "Japanese": "ストップ / 休止"
+  },
+  {
+    "id": 422,
+    "English": "story",
+    "Japanese": "物語 / お話"
+  },
+  {
+    "id": 423,
+    "English": "stretch",
+    "Japanese": "伸張 / 伸ばす"
+  },
+  {
+    "id": 424,
+    "English": "structure",
+    "Japanese": "構造 / 建築物"
+  },
+  {
+    "id": 425,
+    "English": "substance",
+    "Japanese": "物質 / 実体 / 中身"
+  },
+  {
+    "id": 426,
+    "English": "sugar",
+    "Japanese": "さとう"
+  },
+  {
+    "id": 427,
+    "English": "suggestion",
+    "Japanese": "提案"
+  },
+  {
+    "id": 428,
+    "English": "summer",
+    "Japanese": "夏"
+  },
+  {
+    "id": 429,
+    "English": "support",
+    "Japanese": "支える / 支持する"
+  },
+  {
+    "id": 430,
+    "English": "surprise",
+    "Japanese": "驚き"
+  },
+  {
+    "id": 431,
+    "English": "swim",
+    "Japanese": "泳ぎ / 水泳"
+  },
+  {
+    "id": 432,
+    "English": "system",
+    "Japanese": "システム / 系統 / 体系"
+  },
+  {
+    "id": 433,
+    "English": "talk",
+    "Japanese": "話す / 演説する"
+  },
+  {
+    "id": 434,
+    "English": "taste",
+    "Japanese": "味覚 / 風味"
+  },
+  {
+    "id": 435,
+    "English": "tax",
+    "Japanese": "課税"
+  },
+  {
+    "id": 436,
+    "English": "teaching",
+    "Japanese": "教え / 教育 / 指導"
+  },
+  {
+    "id": 437,
+    "English": "tendency",
+    "Japanese": "傾向"
+  },
+  {
+    "id": 438,
+    "English": "test",
+    "Japanese": "テスト"
+  },
+  {
+    "id": 439,
+    "English": "theory",
+    "Japanese": "理論 / 学説"
+  },
+  {
+    "id": 440,
+    "English": "thing",
+    "Japanese": "モノ / 物体"
+  },
+  {
+    "id": 441,
+    "English": "thought",
+    "Japanese": "思索 / 考えること"
+  },
+  {
+    "id": 442,
+    "English": "thunder",
+    "Japanese": "雷 / 雷鳴 / 咆哮"
+  },
+  {
+    "id": 443,
+    "English": "time",
+    "Japanese": "時 / 年月"
+  },
+  {
+    "id": 444,
+    "English": "tin",
+    "Japanese": "スズ / ブリキ"
+  },
+  {
+    "id": 445,
+    "English": "top",
+    "Japanese": "てっぺん"
+  },
+  {
+    "id": 446,
+    "English": "touch",
+    "Japanese": "タッチ / 接触"
+  },
+  {
+    "id": 447,
+    "English": "trade",
+    "Japanese": "交換"
+  },
+  {
+    "id": 448,
+    "English": "transport",
+    "Japanese": "運輸 / 運送 / 運び"
+  },
+  {
+    "id": 449,
+    "English": "trick",
+    "Japanese": "いたずら / たくらみ"
+  },
+  {
+    "id": 450,
+    "English": "trouble",
+    "Japanese": "故障 / 問題点"
+  },
+  {
+    "id": 451,
+    "English": "turn",
+    "Japanese": "回転させる / まわす / ひねる"
+  },
+  {
+    "id": 452,
+    "English": "twist",
+    "Japanese": "ひねる / ねじる / 寄り合わせる"
+  },
+  {
+    "id": 453,
+    "English": "unit",
+    "Japanese": "単一体 / 集合体 / 単位 / 部隊"
+  },
+  {
+    "id": 454,
+    "English": "use",
+    "Japanese": "使う"
+  },
+  {
+    "id": 455,
+    "English": "value",
+    "Japanese": "価値 / 評価"
+  },
+  {
+    "id": 456,
+    "English": "verse",
+    "Japanese": "詩節 / 詩句"
+  },
+  {
+    "id": 457,
+    "English": "vessel",
+    "Japanese": "容器 / 船舶"
+  },
+  {
+    "id": 458,
+    "English": "view",
+    "Japanese": "視野 / 光景 / 視点"
+  },
+  {
+    "id": 459,
+    "English": "voice",
+    "Japanese": "声"
+  },
+  {
+    "id": 460,
+    "English": "walk",
+    "Japanese": "歩く"
+  },
+  {
+    "id": 461,
+    "English": "war",
+    "Japanese": "戦争"
+  },
+  {
+    "id": 462,
+    "English": "wash",
+    "Japanese": "洗う"
+  },
+  {
+    "id": 463,
+    "English": "waste",
+    "Japanese": "浪費する / 無駄にする"
+  },
+  {
+    "id": 464,
+    "English": "water",
+    "Japanese": "水"
+  },
+  {
+    "id": 465,
+    "English": "wave",
+    "Japanese": "波"
+  },
+  {
+    "id": 466,
+    "English": "wax",
+    "Japanese": "ロウ / ロウ状のもの"
+  },
+  {
+    "id": 467,
+    "English": "way",
+    "Japanese": "道 / 方式"
+  },
+  {
+    "id": 468,
+    "English": "weather",
+    "Japanese": "天気"
+  },
+  {
+    "id": 469,
+    "English": "week",
+    "Japanese": "週"
+  },
+  {
+    "id": 470,
+    "English": "weight",
+    "Japanese": "重さ"
+  },
+  {
+    "id": 471,
+    "English": "wind",
+    "Japanese": "風"
+  },
+  {
+    "id": 472,
+    "English": "wine",
+    "Japanese": "ワイン"
+  },
+  {
+    "id": 473,
+    "English": "winter",
+    "Japanese": "冬"
+  },
+  {
+    "id": 474,
+    "English": "woman",
+    "Japanese": "女性"
+  },
+  {
+    "id": 475,
+    "English": "wood",
+    "Japanese": "樹木 / 木材"
+  },
+  {
+    "id": 476,
+    "English": "wool",
+    "Japanese": "羊毛"
+  },
+  {
+    "id": 477,
+    "English": "word",
+    "Japanese": "言葉 / 単語"
+  },
+  {
+    "id": 478,
+    "English": "work",
+    "Japanese": "労働 / 訓練"
+  },
+  {
+    "id": 479,
+    "English": "wound",
+    "Japanese": "負傷 / 痛手"
+  },
+  {
+    "id": 480,
+    "English": "writing",
+    "Japanese": "作文 / 書きもの"
+  },
+  {
+    "id": 481,
+    "English": "year",
+    "Japanese": "年"
+  },
+  {
+    "id": 482,
+    "English": "angle",
+    "Japanese": "角度"
+  },
+  {
+    "id": 483,
+    "English": "ant",
+    "Japanese": "アリ"
+  },
+  {
+    "id": 484,
+    "English": "apple",
+    "Japanese": "リンゴ"
+  },
+  {
+    "id": 485,
+    "English": "arch",
+    "Japanese": "カーブ / 弯曲 / アーチ"
+  },
+  {
+    "id": 486,
+    "English": "arm",
+    "Japanese": "武装 / 備える / 装備"
+  },
+  {
+    "id": 487,
+    "English": "army",
+    "Japanese": "軍団 / 部隊"
+  },
+  {
+    "id": 488,
+    "English": "baby",
+    "Japanese": "ベビー / 赤ん坊"
+  },
+  {
+    "id": 489,
+    "English": "bag",
+    "Japanese": "ふくろ / かばん"
+  },
+  {
+    "id": 490,
+    "English": "ball",
+    "Japanese": "球 / ボール"
+  },
+  {
+    "id": 491,
+    "English": "band",
+    "Japanese": "しばるもの / ひも"
+  },
+  {
+    "id": 492,
+    "English": "basin",
+    "Japanese": "洗面器 / 水たまり"
+  },
+  {
+    "id": 493,
+    "English": "basket",
+    "Japanese": "かご"
+  },
+  {
+    "id": 494,
+    "English": "bath",
+    "Japanese": "入浴 / 風呂"
+  },
+  {
+    "id": 495,
+    "English": "bed",
+    "Japanese": "ベッド / 寝床"
+  },
+  {
+    "id": 496,
+    "English": "bee",
+    "Japanese": "蜂 / 蜜蜂"
+  },
+  {
+    "id": 497,
+    "English": "bell",
+    "Japanese": "ベル / 鐘"
+  },
+  {
+    "id": 498,
+    "English": "berry",
+    "Japanese": "ベリー / いちご"
+  },
+  {
+    "id": 499,
+    "English": "bird",
+    "Japanese": "鳥"
+  },
+  {
+    "id": 500,
+    "English": "blade",
+    "Japanese": "刃物 / ひげそり"
+  },
+  {
+    "id": 501,
+    "English": "board",
+    "Japanese": "板"
+  },
+  {
+    "id": 502,
+    "English": "boat",
+    "Japanese": "小船 / ボート"
+  },
+  {
+    "id": 503,
+    "English": "bone",
+    "Japanese": "骨"
+  },
+  {
+    "id": 504,
+    "English": "book",
+    "Japanese": "本"
+  },
+  {
+    "id": 505,
+    "English": "boot",
+    "Japanese": "ブーツ / 長靴"
+  },
+  {
+    "id": 506,
+    "English": "bottle",
+    "Japanese": "ビン"
+  },
+  {
+    "id": 507,
+    "English": "box",
+    "Japanese": "箱"
+  },
+  {
+    "id": 508,
+    "English": "boy",
+    "Japanese": "男の子 / ボーイ"
+  },
+  {
+    "id": 509,
+    "English": "brain",
+    "Japanese": "頭脳"
+  },
+  {
+    "id": 510,
+    "English": "brake",
+    "Japanese": "歯止め / ブレーキ"
+  },
+  {
+    "id": 511,
+    "English": "branch",
+    "Japanese": "枝 / 枝分れ"
+  },
+  {
+    "id": 512,
+    "English": "brick",
+    "Japanese": "ブロック / レンガ"
+  },
+  {
+    "id": 513,
+    "English": "bridge",
+    "Japanese": "橋 / 橋渡し"
+  },
+  {
+    "id": 514,
+    "English": "brush",
+    "Japanese": "ブラシ / 刷毛 / 小競り合い"
+  },
+  {
+    "id": 515,
+    "English": "bucket",
+    "Japanese": "バケツ / 手桶"
+  },
+  {
+    "id": 516,
+    "English": "bulb",
+    "Japanese": "球状のもの / 電球"
+  },
+  {
+    "id": 517,
+    "English": "button",
+    "Japanese": "ボタン / スイッチ"
+  },
+  {
+    "id": 518,
+    "English": "cake",
+    "Japanese": "ケーキ / 焼き固めた食べ物"
+  },
+  {
+    "id": 519,
+    "English": "camera",
+    "Japanese": "カメラ / 写真機"
+  },
+  {
+    "id": 520,
+    "English": "card",
+    "Japanese": "カード"
+  },
+  {
+    "id": 521,
+    "English": "cart",
+    "Japanese": "カート / 荷車"
+  },
+  {
+    "id": 522,
+    "English": "carriage",
+    "Japanese": "乗り物 / 車両"
+  },
+  {
+    "id": 523,
+    "English": "cat",
+    "Japanese": "ネコ"
+  },
+  {
+    "id": 524,
+    "English": "chain",
+    "Japanese": "くさり"
+  },
+  {
+    "id": 525,
+    "English": "cheese",
+    "Japanese": "チーズ"
+  },
+  {
+    "id": 526,
+    "English": "chest",
+    "Japanese": "むね / 箱"
+  },
+  {
+    "id": 527,
+    "English": "chin",
+    "Japanese": "アゴ"
+  },
+  {
+    "id": 528,
+    "English": "church",
+    "Japanese": "教会 / 礼拝"
+  },
+  {
+    "id": 529,
+    "English": "circle",
+    "Japanese": "一回り / 円形"
+  },
+  {
+    "id": 530,
+    "English": "clock",
+    "Japanese": "計時"
+  },
+  {
+    "id": 531,
+    "English": "cloud",
+    "Japanese": "雲"
+  },
+  {
+    "id": 532,
+    "English": "coat",
+    "Japanese": "コート / 外套"
+  },
+  {
+    "id": 533,
+    "English": "collar",
+    "Japanese": "エリ / 襟飾り"
+  },
+  {
+    "id": 534,
+    "English": "comb",
+    "Japanese": "クシ"
+  },
+  {
+    "id": 535,
+    "English": "cord",
+    "Japanese": "ひも / つなぎ紐"
+  },
+  {
+    "id": 536,
+    "English": "cow",
+    "Japanese": "牛"
+  },
+  {
+    "id": 537,
+    "English": "cup",
+    "Japanese": "コップ"
+  },
+  {
+    "id": 538,
+    "English": "curtain",
+    "Japanese": "カーテン / 幕"
+  },
+  {
+    "id": 539,
+    "English": "cushion",
+    "Japanese": "クッション / 緩衝材"
+  },
+  {
+    "id": 540,
+    "English": "dog",
+    "Japanese": "犬"
+  },
+  {
+    "id": 541,
+    "English": "door",
+    "Japanese": "扉 / 門戸"
+  },
+  {
+    "id": 542,
+    "English": "drain",
+    "Japanese": "排水路 / 流出"
+  },
+  {
+    "id": 543,
+    "English": "drawer",
+    "Japanese": "引き出し"
+  },
+  {
+    "id": 544,
+    "English": "dress",
+    "Japanese": "衣服"
+  },
+  {
+    "id": 545,
+    "English": "drop",
+    "Japanese": "しずく / 落下"
+  },
+  {
+    "id": 546,
+    "English": "ear",
+    "Japanese": "耳"
+  },
+  {
+    "id": 547,
+    "English": "egg",
+    "Japanese": "卵"
+  },
+  {
+    "id": 548,
+    "English": "engine",
+    "Japanese": "エンジン / 発動機 /"
+  },
+  {
+    "id": 549,
+    "English": "eye",
+    "Japanese": "目 /"
+  },
+  {
+    "id": 550,
+    "English": "face",
+    "Japanese": "顔 / 正面"
+  },
+  {
+    "id": 551,
+    "English": "farm",
+    "Japanese": "農場"
+  },
+  {
+    "id": 552,
+    "English": "feather",
+    "Japanese": "羽 / 羽毛"
+  },
+  {
+    "id": 553,
+    "English": "finger",
+    "Japanese": "指"
+  },
+  {
+    "id": 554,
+    "English": "fish",
+    "Japanese": "魚"
+  },
+  {
+    "id": 555,
+    "English": "flag",
+    "Japanese": "旗"
+  },
+  {
+    "id": 556,
+    "English": "floor",
+    "Japanese": "床 / 階"
+  },
+  {
+    "id": 557,
+    "English": "fly",
+    "Japanese": "飛ぶ"
+  },
+  {
+    "id": 558,
+    "English": "foot",
+    "Japanese": "足"
+  },
+  {
+    "id": 559,
+    "English": "fork",
+    "Japanese": "フォーク / 熊手 / 分岐"
+  },
+  {
+    "id": 560,
+    "English": "fowl",
+    "Japanese": "家禽 / 鶏肉"
+  },
+  {
+    "id": 561,
+    "English": "frame",
+    "Japanese": "骨組み / 枠組み"
+  },
+  {
+    "id": 562,
+    "English": "garden",
+    "Japanese": "庭いじりをする"
+  },
+  {
+    "id": 563,
+    "English": "girl",
+    "Japanese": "令嬢 / 娘"
+  },
+  {
+    "id": 564,
+    "English": "glove",
+    "Japanese": "手袋 / グローブト"
+  },
+  {
+    "id": 565,
+    "English": "goat",
+    "Japanese": "山羊"
+  },
+  {
+    "id": 566,
+    "English": "gun",
+    "Japanese": "銃"
+  },
+  {
+    "id": 567,
+    "English": "hair",
+    "Japanese": "毛 / 髪の毛"
+  },
+  {
+    "id": 568,
+    "English": "hammer",
+    "Japanese": "ハンマー / 鎚"
+  },
+  {
+    "id": 569,
+    "English": "hand",
+    "Japanese": "手 / 人手"
+  },
+  {
+    "id": 570,
+    "English": "hat",
+    "Japanese": "帽子"
+  },
+  {
+    "id": 571,
+    "English": "head",
+    "Japanese": "アタマ"
+  },
+  {
+    "id": 572,
+    "English": "heart",
+    "Japanese": "こころ / ハート / 心臓"
+  },
+  {
+    "id": 573,
+    "English": "hook",
+    "Japanese": "鉤 / フック"
+  },
+  {
+    "id": 574,
+    "English": "horn",
+    "Japanese": "角"
+  },
+  {
+    "id": 575,
+    "English": "horse",
+    "Japanese": "馬"
+  },
+  {
+    "id": 576,
+    "English": "hospital",
+    "Japanese": "病院 / ホスピタル"
+  },
+  {
+    "id": 577,
+    "English": "house",
+    "Japanese": "家 / 家庭"
+  },
+  {
+    "id": 578,
+    "English": "island",
+    "Japanese": "島"
+  },
+  {
+    "id": 579,
+    "English": "jewel",
+    "Japanese": "宝石"
+  },
+  {
+    "id": 580,
+    "English": "kettle",
+    "Japanese": "湯わかし / 釜 / やかん"
+  },
+  {
+    "id": 581,
+    "English": "key",
+    "Japanese": "鍵 / カギ"
+  },
+  {
+    "id": 582,
+    "English": "knee",
+    "Japanese": "ひざ"
+  },
+  {
+    "id": 583,
+    "English": "knife",
+    "Japanese": "ナイフ"
+  },
+  {
+    "id": 584,
+    "English": "knot",
+    "Japanese": "結ぶ"
+  },
+  {
+    "id": 585,
+    "English": "leaf",
+    "Japanese": "葉っぱ"
+  },
+  {
+    "id": 586,
+    "English": "leg",
+    "Japanese": "脚 / 区間"
+  },
+  {
+    "id": 587,
+    "English": "library",
+    "Japanese": "ライブラリ / 図書館"
+  },
+  {
+    "id": 588,
+    "English": "line",
+    "Japanese": "線"
+  },
+  {
+    "id": 589,
+    "English": "lip",
+    "Japanese": "くちびる"
+  },
+  {
+    "id": 590,
+    "English": "lock",
+    "Japanese": "かぎ"
+  },
+  {
+    "id": 591,
+    "English": "map",
+    "Japanese": "地図"
+  },
+  {
+    "id": 592,
+    "English": "match",
+    "Japanese": "試合 / 調和の取れたもの"
+  },
+  {
+    "id": 593,
+    "English": "monkey",
+    "Japanese": "さる"
+  },
+  {
+    "id": 594,
+    "English": "moon",
+    "Japanese": "月"
+  },
+  {
+    "id": 595,
+    "English": "mouth",
+    "Japanese": "口"
+  },
+  {
+    "id": 596,
+    "English": "muscle",
+    "Japanese": "筋肉"
+  },
+  {
+    "id": 597,
+    "English": "nail",
+    "Japanese": "つめ"
+  },
+  {
+    "id": 598,
+    "English": "neck",
+    "Japanese": "首"
+  },
+  {
+    "id": 599,
+    "English": "needle",
+    "Japanese": "はり"
+  },
+  {
+    "id": 600,
+    "English": "nerve",
+    "Japanese": "神経"
+  },
+  {
+    "id": 601,
+    "English": "net",
+    "Japanese": "ネット / 網"
+  },
+  {
+    "id": 602,
+    "English": "nose",
+    "Japanese": "鼻"
+  },
+  {
+    "id": 603,
+    "English": "nuts",
+    "Japanese": "木の実"
+  },
+  {
+    "id": 604,
+    "English": "office",
+    "Japanese": "オフィス / 事務所"
+  },
+  {
+    "id": 605,
+    "English": "orange",
+    "Japanese": "オレンジがかった / オレンジ色の"
+  },
+  {
+    "id": 606,
+    "English": "oven",
+    "Japanese": "天火 / オーブン"
+  },
+  {
+    "id": 607,
+    "English": "parcel",
+    "Japanese": "小包"
+  },
+  {
+    "id": 608,
+    "English": "pen",
+    "Japanese": "ペン / 筆記用具"
+  },
+  {
+    "id": 609,
+    "English": "pencil",
+    "Japanese": "鉛筆"
+  },
+  {
+    "id": 610,
+    "English": "picture",
+    "Japanese": "絵 / 写真"
+  },
+  {
+    "id": 611,
+    "English": "pig",
+    "Japanese": "ぶた"
+  },
+  {
+    "id": 612,
+    "English": "pin",
+    "Japanese": "ピン / 鋲"
+  },
+  {
+    "id": 613,
+    "English": "pipe",
+    "Japanese": "パイプ / 筒 / 管"
+  },
+  {
+    "id": 614,
+    "English": "plane",
+    "Japanese": "平ら / 平面"
+  },
+  {
+    "id": 615,
+    "English": "plate",
+    "Japanese": "平皿 / 平板"
+  },
+  {
+    "id": 616,
+    "English": "cultivate",
+    "Japanese": "耕す / 鋤く"
+  },
+  {
+    "id": 617,
+    "English": "pocket",
+    "Japanese": "懐中 / ポケット"
+  },
+  {
+    "id": 618,
+    "English": "pot",
+    "Japanese": "つぼ / 鉢"
+  },
+  {
+    "id": 619,
+    "English": "potato",
+    "Japanese": "ジャガイモ"
+  },
+  {
+    "id": 620,
+    "English": "prison",
+    "Japanese": "牢屋 / 監獄"
+  },
+  {
+    "id": 621,
+    "English": "pump",
+    "Japanese": "注入する / 吸い出す"
+  },
+  {
+    "id": 622,
+    "English": "rail",
+    "Japanese": "横木 / 柵 / レール / 鉄道"
+  },
+  {
+    "id": 623,
+    "English": "rat",
+    "Japanese": "ネズミ"
+  },
+  {
+    "id": 624,
+    "English": "receipt",
+    "Japanese": "受取り / 受領書 / 領収書"
+  },
+  {
+    "id": 625,
+    "English": "ring",
+    "Japanese": "鳴り響く / 電話をかける"
+  },
+  {
+    "id": 626,
+    "English": "rod",
+    "Japanese": "棒"
+  },
+  {
+    "id": 627,
+    "English": "roof",
+    "Japanese": "屋根 / 天井"
+  },
+  {
+    "id": 628,
+    "English": "root",
+    "Japanese": "根っこ"
+  },
+  {
+    "id": 629,
+    "English": "sail",
+    "Japanese": "帆"
+  },
+  {
+    "id": 630,
+    "English": "school",
+    "Japanese": "学校"
+  },
+  {
+    "id": 631,
+    "English": "scissors",
+    "Japanese": "はさみ"
+  },
+  {
+    "id": 632,
+    "English": "screw",
+    "Japanese": "ねじる / ひねる"
+  },
+  {
+    "id": 633,
+    "English": "seed",
+    "Japanese": "たね"
+  },
+  {
+    "id": 634,
+    "English": "sheep",
+    "Japanese": "ヒツジ"
+  },
+  {
+    "id": 635,
+    "English": "shelf",
+    "Japanese": "棚"
+  },
+  {
+    "id": 636,
+    "English": "ship",
+    "Japanese": "船"
+  },
+  {
+    "id": 637,
+    "English": "shirt",
+    "Japanese": "シャツ"
+  },
+  {
+    "id": 638,
+    "English": "shoe",
+    "Japanese": "くつ"
+  },
+  {
+    "id": 639,
+    "English": "skin",
+    "Japanese": "ひふ"
+  },
+  {
+    "id": 640,
+    "English": "skirt",
+    "Japanese": "スカート"
+  },
+  {
+    "id": 641,
+    "English": "snake",
+    "Japanese": "ヘビ"
+  },
+  {
+    "id": 642,
+    "English": "sock",
+    "Japanese": "ぶん殴る"
+  },
+  {
+    "id": 643,
+    "English": "spade",
+    "Japanese": "スペード / スコップ / ショベル"
+  },
+  {
+    "id": 644,
+    "English": "sponge",
+    "Japanese": "スポンジ"
+  },
+  {
+    "id": 645,
+    "English": "spoon",
+    "Japanese": "スプーン / さじ"
+  },
+  {
+    "id": 646,
+    "English": "spring",
+    "Japanese": "春 / 泉"
+  },
+  {
+    "id": 647,
+    "English": "square",
+    "Japanese": "四角"
+  },
+  {
+    "id": 648,
+    "English": "stamp",
+    "Japanese": "スタンプ / 印"
+  },
+  {
+    "id": 649,
+    "English": "star",
+    "Japanese": "星"
+  },
+  {
+    "id": 650,
+    "English": "station",
+    "Japanese": "駅"
+  },
+  {
+    "id": 651,
+    "English": "stem",
+    "Japanese": "茎 / 柄"
+  },
+  {
+    "id": 652,
+    "English": "stick",
+    "Japanese": "ステッキ / 杖"
+  },
+  {
+    "id": 653,
+    "English": "stocking",
+    "Japanese": "ストッキング / 長靴下"
+  },
+  {
+    "id": 654,
+    "English": "stomach",
+    "Japanese": "胃"
+  },
+  {
+    "id": 655,
+    "English": "store",
+    "Japanese": "商店"
+  },
+  {
+    "id": 656,
+    "English": "street",
+    "Japanese": "ストリート / 街路"
+  },
+  {
+    "id": 657,
+    "English": "sun",
+    "Japanese": "太陽"
+  },
+  {
+    "id": 658,
+    "English": "table",
+    "Japanese": "テーブル / 一覧表"
+  },
+  {
+    "id": 659,
+    "English": "tail",
+    "Japanese": "尻尾"
+  },
+  {
+    "id": 660,
+    "English": "thread",
+    "Japanese": "糸"
+  },
+  {
+    "id": 661,
+    "English": "throat",
+    "Japanese": "のど"
+  },
+  {
+    "id": 662,
+    "English": "thumb",
+    "Japanese": "おやゆび"
+  },
+  {
+    "id": 663,
+    "English": "ticket",
+    "Japanese": "チケット / 券"
+  },
+  {
+    "id": 664,
+    "English": "tongue",
+    "Japanese": "舌"
+  },
+  {
+    "id": 665,
+    "English": "tooth",
+    "Japanese": "歯"
+  },
+  {
+    "id": 666,
+    "English": "town",
+    "Japanese": "町"
+  },
+  {
+    "id": 667,
+    "English": "train",
+    "Japanese": "列車"
+  },
+  {
+    "id": 668,
+    "English": "tray",
+    "Japanese": "お盆 / トレー"
+  },
+  {
+    "id": 669,
+    "English": "tree",
+    "Japanese": "木 / 樹木"
+  },
+  {
+    "id": 670,
+    "English": "trousers",
+    "Japanese": "ズボン"
+  },
+  {
+    "id": 671,
+    "English": "umbrella",
+    "Japanese": "かさ"
+  },
+  {
+    "id": 672,
+    "English": "wall",
+    "Japanese": "カベ"
+  },
+  {
+    "id": 673,
+    "English": "watch",
+    "Japanese": "時計 / 見張り"
+  },
+  {
+    "id": 674,
+    "English": "wheel",
+    "Japanese": "車輪"
+  },
+  {
+    "id": 675,
+    "English": "whip",
+    "Japanese": "むち打ち"
+  },
+  {
+    "id": 676,
+    "English": "whistle",
+    "Japanese": "口笛 / ホイッスル"
+  },
+  {
+    "id": 677,
+    "English": "window",
+    "Japanese": "ウィンドウ / 窓"
+  },
+  {
+    "id": 678,
+    "English": "wing",
+    "Japanese": "つばさ"
+  },
+  {
+    "id": 679,
+    "English": "wire",
+    "Japanese": "針金 / 電線"
+  },
+  {
+    "id": 680,
+    "English": "worm",
+    "Japanese": "虫 / いも虫"
+  },
+  {
+    "id": 681,
+    "English": "able",
+    "Japanese": "可能な"
+  },
+  {
+    "id": 682,
+    "English": "acid",
+    "Japanese": "すっぱい / 酸味がある"
+  },
+  {
+    "id": 683,
+    "English": "angry",
+    "Japanese": "怒った"
+  },
+  {
+    "id": 684,
+    "English": "automatic",
+    "Japanese": "自動的な / 自動的な"
+  },
+  {
+    "id": 685,
+    "English": "beautiful",
+    "Japanese": "美しい / きれいな"
+  },
+  {
+    "id": 686,
+    "English": "black",
+    "Japanese": "黒い"
+  },
+  {
+    "id": 687,
+    "English": "boiling",
+    "Japanese": "煮えた / ゆでた"
+  },
+  {
+    "id": 688,
+    "English": "bright",
+    "Japanese": "明々と"
+  },
+  {
+    "id": 689,
+    "English": "broken",
+    "Japanese": "壊れた"
+  },
+  {
+    "id": 690,
+    "English": "brown",
+    "Japanese": "茶色い"
+  },
+  {
+    "id": 691,
+    "English": "cheap",
+    "Japanese": "安上がりな / 安っぽい"
+  },
+  {
+    "id": 692,
+    "English": "chemical",
+    "Japanese": "化学的な"
+  },
+  {
+    "id": 693,
+    "English": "chief",
+    "Japanese": "主要な / 重要な"
+  },
+  {
+    "id": 694,
+    "English": "clean",
+    "Japanese": "きれいな / 清潔な"
+  },
+  {
+    "id": 695,
+    "English": "clear",
+    "Japanese": "明るい / 澄んだ"
+  },
+  {
+    "id": 696,
+    "English": "common",
+    "Japanese": "共通の / 公共の"
+  },
+  {
+    "id": 697,
+    "English": "complex",
+    "Japanese": "複雑な / ややこしい"
+  },
+  {
+    "id": 698,
+    "English": "conscious",
+    "Japanese": "気づいて / 意識して"
+  },
+  {
+    "id": 699,
+    "English": "cut",
+    "Japanese": "カットされた / 切り詰めた"
+  },
+  {
+    "id": 700,
+    "English": "deep",
+    "Japanese": "深い"
+  },
+  {
+    "id": 701,
+    "English": "dependent",
+    "Japanese": "依存した / 頼った"
+  },
+  {
+    "id": 702,
+    "English": "early",
+    "Japanese": "早い"
+  },
+  {
+    "id": 703,
+    "English": "elastic",
+    "Japanese": "弾力のある"
+  },
+  {
+    "id": 704,
+    "English": "electric",
+    "Japanese": "電気の / 電動の"
+  },
+  {
+    "id": 705,
+    "English": "equal",
+    "Japanese": "等しい / 均等な"
+  },
+  {
+    "id": 706,
+    "English": "fat",
+    "Japanese": "太った"
+  },
+  {
+    "id": 707,
+    "English": "fertile",
+    "Japanese": "肥えた / 繁殖力のある"
+  },
+  {
+    "id": 708,
+    "English": "first",
+    "Japanese": "最初に / まず"
+  },
+  {
+    "id": 709,
+    "English": "fixed",
+    "Japanese": "固定した / 一定の"
+  },
+  {
+    "id": 710,
+    "English": "flat",
+    "Japanese": "フラット / 平らな"
+  },
+  {
+    "id": 711,
+    "English": "free",
+    "Japanese": "自由な / 無料の"
+  },
+  {
+    "id": 712,
+    "English": "frequent",
+    "Japanese": "よくある / ひんぱんにある"
+  },
+  {
+    "id": 713,
+    "English": "full",
+    "Japanese": "いっぱいの"
+  },
+  {
+    "id": 714,
+    "English": "general",
+    "Japanese": "世間一般の / 一般的な"
+  },
+  {
+    "id": 715,
+    "English": "good",
+    "Japanese": "良い"
+  },
+  {
+    "id": 716,
+    "English": "great",
+    "Japanese": "偉大な / すごい"
+  },
+  {
+    "id": 717,
+    "English": "gray",
+    "Japanese": "灰色の"
+  },
+  {
+    "id": 718,
+    "English": "hanging",
+    "Japanese": "つりさげ"
+  },
+  {
+    "id": 719,
+    "English": "happy",
+    "Japanese": "しあわせな"
+  },
+  {
+    "id": 720,
+    "English": "hard",
+    "Japanese": "必死に"
+  },
+  {
+    "id": 721,
+    "English": "healthy",
+    "Japanese": "健康な"
+  },
+  {
+    "id": 722,
+    "English": "high",
+    "Japanese": "高い"
+  },
+  {
+    "id": 723,
+    "English": "hollow",
+    "Japanese": "空っぽな / へこんだ"
+  },
+  {
+    "id": 724,
+    "English": "important",
+    "Japanese": "重要な / 大切な"
+  },
+  {
+    "id": 725,
+    "English": "kind",
+    "Japanese": "親切な"
+  },
+  {
+    "id": 726,
+    "English": "like",
+    "Japanese": "同じような"
+  },
+  {
+    "id": 727,
+    "English": "living",
+    "Japanese": "生きている / 活気のある"
+  },
+  {
+    "id": 728,
+    "English": "long",
+    "Japanese": "長い"
+  },
+  {
+    "id": 729,
+    "English": "male",
+    "Japanese": "男性 / オス"
+  },
+  {
+    "id": 730,
+    "English": "married",
+    "Japanese": "結婚している"
+  },
+  {
+    "id": 731,
+    "English": "material",
+    "Japanese": "実質的 / 物質的"
+  },
+  {
+    "id": 732,
+    "English": "medical",
+    "Japanese": "医療"
+  },
+  {
+    "id": 733,
+    "English": "military",
+    "Japanese": "軍事的な"
+  },
+  {
+    "id": 734,
+    "English": "natural",
+    "Japanese": "自然な / 天然の"
+  },
+  {
+    "id": 735,
+    "English": "necessary",
+    "Japanese": "必然的"
+  },
+  {
+    "id": 736,
+    "English": "new",
+    "Japanese": "新しい"
+  },
+  {
+    "id": 737,
+    "English": "normal",
+    "Japanese": "正常な / 標準の / 一般的な"
+  },
+  {
+    "id": 738,
+    "English": "open",
+    "Japanese": "開いた / あいた"
+  },
+  {
+    "id": 739,
+    "English": "parallel",
+    "Japanese": "平行な / 並んだ"
+  },
+  {
+    "id": 740,
+    "English": "past",
+    "Japanese": "通り越して / 通り過ぎて"
+  },
+  {
+    "id": 741,
+    "English": "physical",
+    "Japanese": "物理的 / 物質的 / 物的"
+  },
+  {
+    "id": 742,
+    "English": "political",
+    "Japanese": "政治的な"
+  },
+  {
+    "id": 743,
+    "English": "poor",
+    "Japanese": "貧乏な / 貧弱な"
+  },
+  {
+    "id": 744,
+    "English": "possible",
+    "Japanese": "ありうる / 潜在的"
+  },
+  {
+    "id": 745,
+    "English": "present",
+    "Japanese": "現在の"
+  },
+  {
+    "id": 746,
+    "English": "private",
+    "Japanese": "秘密の"
+  },
+  {
+    "id": 747,
+    "English": "probable",
+    "Japanese": "ありそうな"
+  },
+  {
+    "id": 748,
+    "English": "quick",
+    "Japanese": "素早い / 早い"
+  },
+  {
+    "id": 749,
+    "English": "quiet",
+    "Japanese": "静かな"
+  },
+  {
+    "id": 750,
+    "English": "ready",
+    "Japanese": "準備のできた"
+  },
+  {
+    "id": 751,
+    "English": "red",
+    "Japanese": "赤い"
+  },
+  {
+    "id": 752,
+    "English": "regular",
+    "Japanese": "普通の / いつもの"
+  },
+  {
+    "id": 753,
+    "English": "responsible",
+    "Japanese": "責任がある"
+  },
+  {
+    "id": 754,
+    "English": "right",
+    "Japanese": "正確な"
+  },
+  {
+    "id": 755,
+    "English": "round",
+    "Japanese": "まるい"
+  },
+  {
+    "id": 756,
+    "English": "same",
+    "Japanese": "同じ"
+  },
+  {
+    "id": 757,
+    "English": "second",
+    "Japanese": "第2に / 次に"
+  },
+  {
+    "id": 758,
+    "English": "separate",
+    "Japanese": "分かれた"
+  },
+  {
+    "id": 759,
+    "English": "serious",
+    "Japanese": "まじめな / 重大な"
+  },
+  {
+    "id": 760,
+    "English": "sharp",
+    "Japanese": "するどい / 俊敏な"
+  },
+  {
+    "id": 761,
+    "English": "smooth",
+    "Japanese": "なめらかな / 穏やか"
+  },
+  {
+    "id": 762,
+    "English": "sticky",
+    "Japanese": "粘っこい"
+  },
+  {
+    "id": 763,
+    "English": "stiff",
+    "Japanese": "こわばった"
+  },
+  {
+    "id": 764,
+    "English": "straight",
+    "Japanese": "まっすぐな"
+  },
+  {
+    "id": 765,
+    "English": "strong",
+    "Japanese": "力強い / 確か"
+  },
+  {
+    "id": 766,
+    "English": "sudden",
+    "Japanese": "急激 / 突発的"
+  },
+  {
+    "id": 767,
+    "English": "sweet",
+    "Japanese": "優しい / あまい"
+  },
+  {
+    "id": 768,
+    "English": "tall",
+    "Japanese": "高い"
+  },
+  {
+    "id": 769,
+    "English": "thick",
+    "Japanese": "濃い"
+  },
+  {
+    "id": 770,
+    "English": "tight",
+    "Japanese": "窮屈な"
+  },
+  {
+    "id": 771,
+    "English": "tired",
+    "Japanese": "疲れた / くたびれた"
+  },
+  {
+    "id": 772,
+    "English": "true",
+    "Japanese": "正確な"
+  },
+  {
+    "id": 773,
+    "English": "violent",
+    "Japanese": "暴力的"
+  },
+  {
+    "id": 774,
+    "English": "waiting",
+    "Japanese": "待ち時間"
+  },
+  {
+    "id": 775,
+    "English": "warm",
+    "Japanese": "暖める"
+  },
+  {
+    "id": 776,
+    "English": "wet",
+    "Japanese": "ぬれた"
+  },
+  {
+    "id": 777,
+    "English": "wide",
+    "Japanese": "幅広い"
+  },
+  {
+    "id": 778,
+    "English": "wise",
+    "Japanese": "かしこい才"
+  },
+  {
+    "id": 779,
+    "English": "yellow",
+    "Japanese": "黄色い"
+  },
+  {
+    "id": 780,
+    "English": "young",
+    "Japanese": "若い"
+  },
+  {
+    "id": 781,
+    "English": "awake",
+    "Japanese": "覚めた"
+  },
+  {
+    "id": 782,
+    "English": "bad",
+    "Japanese": "ひどい / 悪い"
+  },
+  {
+    "id": 783,
+    "English": "bent",
+    "Japanese": "まがった"
+  },
+  {
+    "id": 784,
+    "English": "bitter",
+    "Japanese": "苦い"
+  },
+  {
+    "id": 785,
+    "English": "blue",
+    "Japanese": "青い"
+  },
+  {
+    "id": 786,
+    "English": "certain",
+    "Japanese": "確かな"
+  },
+  {
+    "id": 787,
+    "English": "cold",
+    "Japanese": "冷たい"
+  },
+  {
+    "id": 788,
+    "English": "complete",
+    "Japanese": "完全な"
+  },
+  {
+    "id": 789,
+    "English": "cruel",
+    "Japanese": "無情な"
+  },
+  {
+    "id": 790,
+    "English": "dark",
+    "Japanese": "暗い"
+  },
+  {
+    "id": 791,
+    "English": "dead",
+    "Japanese": "枯れた / 死んだ / 麻痺した"
+  },
+  {
+    "id": 792,
+    "English": "dear",
+    "Japanese": "親愛な / かわいい"
+  },
+  {
+    "id": 793,
+    "English": "different",
+    "Japanese": "変わった"
+  },
+  {
+    "id": 794,
+    "English": "dirty",
+    "Japanese": "汚れた"
+  },
+  {
+    "id": 795,
+    "English": "dry",
+    "Japanese": "乾いた"
+  },
+  {
+    "id": 796,
+    "English": "false",
+    "Japanese": "間違った"
+  },
+  {
+    "id": 797,
+    "English": "feeble",
+    "Japanese": "弱々しい / かすかな"
+  },
+  {
+    "id": 798,
+    "English": "female",
+    "Japanese": "牝 / 雌 / メス"
+  },
+  {
+    "id": 799,
+    "English": "foolish",
+    "Japanese": "おろかな"
+  },
+  {
+    "id": 800,
+    "English": "future",
+    "Japanese": "未来の"
+  },
+  {
+    "id": 801,
+    "English": "green",
+    "Japanese": "緑色の"
+  },
+  {
+    "id": 802,
+    "English": "ill",
+    "Japanese": "不完全な / 病気の"
+  },
+  {
+    "id": 803,
+    "English": "last",
+    "Japanese": "臨終の / 最期の"
+  },
+  {
+    "id": 804,
+    "English": "late",
+    "Japanese": "遅れた"
+  },
+  {
+    "id": 805,
+    "English": "left",
+    "Japanese": "左の"
+  },
+  {
+    "id": 806,
+    "English": "loose",
+    "Japanese": "なまけた"
+  },
+  {
+    "id": 807,
+    "English": "loud",
+    "Japanese": "うるさい"
+  },
+  {
+    "id": 808,
+    "English": "low",
+    "Japanese": "低い"
+  },
+  {
+    "id": 809,
+    "English": "mixed",
+    "Japanese": "まざった"
+  },
+  {
+    "id": 810,
+    "English": "narrow",
+    "Japanese": "せまい"
+  },
+  {
+    "id": 811,
+    "English": "old",
+    "Japanese": "古い"
+  },
+  {
+    "id": 812,
+    "English": "opposite",
+    "Japanese": "向かい合わせの / 反対側の"
+  },
+  {
+    "id": 813,
+    "English": "public",
+    "Japanese": "パブリック / 公的な"
+  },
+  {
+    "id": 814,
+    "English": "rough",
+    "Japanese": "荒い"
+  },
+  {
+    "id": 815,
+    "English": "sad",
+    "Japanese": "残念な"
+  },
+  {
+    "id": 816,
+    "English": "safe",
+    "Japanese": "安全な / 安心の"
+  },
+  {
+    "id": 817,
+    "English": "secret",
+    "Japanese": "秘密の"
+  },
+  {
+    "id": 818,
+    "English": "short",
+    "Japanese": "短い"
+  },
+  {
+    "id": 819,
+    "English": "shut",
+    "Japanese": "閉じた"
+  },
+  {
+    "id": 820,
+    "English": "simple",
+    "Japanese": "シンプルな / 単純な"
+  },
+  {
+    "id": 821,
+    "English": "slow",
+    "Japanese": "遅い / ゆっくりな"
+  },
+  {
+    "id": 822,
+    "English": "small",
+    "Japanese": "小さい"
+  },
+  {
+    "id": 823,
+    "English": "soft",
+    "Japanese": "柔らかな"
+  },
+  {
+    "id": 824,
+    "English": "solid",
+    "Japanese": "固体の"
+  },
+  {
+    "id": 825,
+    "English": "special",
+    "Japanese": "特別の"
+  },
+  {
+    "id": 826,
+    "English": "strange",
+    "Japanese": "奇妙な"
+  },
+  {
+    "id": 827,
+    "English": "thin",
+    "Japanese": "痩せた / 細い"
+  },
+  {
+    "id": 828,
+    "English": "white",
+    "Japanese": "白い"
+  },
+  {
+    "id": 829,
+    "English": "wrong",
+    "Japanese": "不正確な / 間違った"
+  },
+  {
+    "id": 830,
+    "English": "world",
+    "Japanese": "世界"
+  },
+  {
+    "id": 831,
+    "English": "data",
+    "Japanese": "データ"
+  },
+  {
+    "id": 832,
+    "English": "also",
+    "Japanese": "もまた"
+  },
+  {
+    "id": 833,
+    "English": "mobile",
+    "Japanese": "モバイル"
+  },
+  {
+    "id": 834,
+    "English": "economic",
+    "Japanese": "経済"
+  },
+  {
+    "id": 835,
+    "English": "around",
+    "Japanese": "周りに"
+  },
+  {
+    "id": 836,
+    "English": "president",
+    "Japanese": "大統領 / 社長"
+  },
+  {
+    "id": 837,
+    "English": "financial",
+    "Japanese": "財務上の / 金融の"
+  },
+  {
+    "id": 838,
+    "English": "international",
+    "Japanese": "国際的な"
+  },
+  {
+    "id": 839,
+    "English": "social",
+    "Japanese": "社会"
+  },
+  {
+    "id": 840,
+    "English": "already",
+    "Japanese": "すでに"
+  },
+  {
+    "id": 841,
+    "English": "information",
+    "Japanese": "情報"
+  }
+]
