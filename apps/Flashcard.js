@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
 import vocab from '../assets/flashcard.json';
-import AnswerChoice from '../components/flashcard/AnswerChoice';
 import CountTenSec from '../components/flashcard/CountTenSec';
+import ChoicesScreen from '../components/flashcard/ChoicesScreen';
 
 const Flashcard = () => {
   let random_index = Math.floor(Math.random() * vocab.length);
@@ -19,6 +19,7 @@ const Flashcard = () => {
   }
 
   const [isTimeOut, setIsTimeOut] = useState(false);
+  const [forceRender, setForceRender] = useState(false);
 
   const problem = vocab[random_index];
   const problem_eng = problem.English;
@@ -28,15 +29,29 @@ const Flashcard = () => {
 
   useEffect(() => {
     if (isTimeOut) {
-      random_index = Math.floor(Math.random() * vocab.length);
-
       setIsTimeOut(false);
     }
   }, [isTimeOut]);
 
+  // useEffect(() => {
+  //   if (isSelected) {
+  //     random_index = Math.floor(Math.random() * vocab.length);
+
+  //     setIsTimeOut(false);
+  //   }
+  // }, [isSelected]);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setIsSelected(false);
+  //   }, 1000);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, [isSelected]);
+
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('../assets/correct.jpg')} />
       <CountTenSec isTimeOut={isTimeOut} setIsTimeOut={setIsTimeOut} />
       <View>
         <Text>{isTimeOut ? 'true' : 'false'}</Text>
@@ -44,25 +59,11 @@ const Flashcard = () => {
       <Text style={styles.eng}>{problem_eng}</Text>
       <View style={styles.answerContainer}>
         <Text>{console.log(random_index)}</Text>
-        <AnswerChoice
-          self_position={0}
+        <ChoicesScreen
           random_correct_position={random_correct_position}
-          Japanese={vocab[answer_choices_index[0]].Japanese}
-        />
-        <AnswerChoice
-          self_position={1}
-          random_correct_position={random_correct_position}
-          Japanese={vocab[answer_choices_index[1]].Japanese}
-        />
-        <AnswerChoice
-          self_position={2}
-          random_correct_position={random_correct_position}
-          Japanese={vocab[answer_choices_index[2]].Japanese}
-        />
-        <AnswerChoice
-          self_position={3}
-          random_correct_position={random_correct_position}
-          Japanese={vocab[answer_choices_index[3]].Japanese}
+          vocab={vocab}
+          answer_choices_index={answer_choices_index}
+          setForceRender={setForceRender}
         />
       </View>
     </View>
@@ -80,14 +81,6 @@ const styles = StyleSheet.create({
   eng: {},
   word: {},
   description: {},
-  image: {
-    position: 'absolute',
-    // flexDirection: 'column',
-    // justifyContent: 'center',
-    alignContent: 'center',
-    width: 300,
-    height: 300,
-  },
 });
 
 export default Flashcard;
