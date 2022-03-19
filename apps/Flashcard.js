@@ -6,7 +6,7 @@ import AnswerChoice from '../components/flashcard/AnswerChoice';
 import CountTenSec from '../components/flashcard/CountTenSec';
 
 const Flashcard = () => {
-  const random_index = Math.floor(Math.random() * vocab.length);
+  let random_index = Math.floor(Math.random() * vocab.length);
   let answer_choices_index = [random_index];
   while (answer_choices_index.length < 4) {
     const r = Math.floor(Math.random() * vocab.length);
@@ -26,6 +26,14 @@ const Flashcard = () => {
   answer_choices_index[0] = answer_choices_index[random_correct_position];
   answer_choices_index[random_correct_position] = random_index;
 
+  useEffect(() => {
+    if (isTimeOut) {
+      random_index = Math.floor(Math.random() * vocab.length);
+
+      setIsTimeOut(false);
+    }
+  }, [isTimeOut]);
+
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={require('../assets/correct.jpg')} />
@@ -35,6 +43,7 @@ const Flashcard = () => {
       </View>
       <Text style={styles.eng}>{problem_eng}</Text>
       <View style={styles.answerContainer}>
+        <Text>{console.log(random_index)}</Text>
         <AnswerChoice
           self_position={0}
           random_correct_position={random_correct_position}
