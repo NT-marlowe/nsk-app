@@ -1,7 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import TmpApp from '../apps/TmpApp';
 import Flashcard from '../apps/Flashcard';
+import OpenURLButton from '../components/OpenURLButton';
+
+const acrobatURL = 'https://adobeacrobat.app.link';
+const title = 'Acrobat';
 
 const SelectedApp = (appName) => {
   switch (appName.appName) {
@@ -11,14 +15,14 @@ const SelectedApp = (appName) => {
     case 'flashcard':
       console.log(appName);
       return <Flashcard />;
+
+    case 'PDF':
+      // return <Button title={title} onPress={() => console.log(acrobatURL)} />;
+      return <OpenURLButton title={title} url={acrobatURL} />;
+
     case 'TmpApp':
       return <TmpApp />;
-    case 'android':
-      return (
-        <View>
-          <Text>Android</Text>
-        </View>
-      );
+
     case 'ios':
       return (
         <View>
