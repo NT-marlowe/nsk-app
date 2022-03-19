@@ -1,11 +1,16 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import TmpApp from '../apps/TmpApp';
+import Flashcard from '../apps/Flashcard';
 
 const SelectedApp = (appName) => {
-  switch (appName) {
+  switch (appName.appName) {
     // appNameにはAppIconに渡したnameプロパティが入っているので，それを使って
     // appsディレクトリからインポートしたアプリコンポーネントを選択する
+
+    case 'amazon':
+      console.log(appName);
+      return <Flashcard />;
     case 'TmpApp':
       return <TmpApp />;
     case 'android':
