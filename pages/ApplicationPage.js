@@ -2,12 +2,9 @@ import React from 'react';
 import { View, Text, Button } from 'react-native';
 import TmpApp from '../apps/TmpApp';
 import Flashcard from '../apps/Flashcard';
-import TestURLButton from '../components/TestURLButton';
-// import { Linking } from 'react-native';
-import * as Linking from 'expo-linking';
+import OpenURLButton from '../components/OpenURLButton';
 
 const acrobatURL = 'https://adobeacrobat.app.link';
-// const acrobatURL = 'https://google.com';
 const title = 'Acrobat';
 
 const SelectedApp = (appName) => {
@@ -21,13 +18,7 @@ const SelectedApp = (appName) => {
 
     case 'PDF':
       // return <Button title={title} onPress={() => console.log(acrobatURL)} />;
-      return (
-        <View>
-          {/* <TestURLButton /> */}
-          <Button title={title} onPress={() => Linking.openURL(acrobatURL)} />
-          <Text>hogege</Text>
-        </View>
-      );
+      return <OpenURLButton title={title} url={acrobatURL} />;
 
     case 'TmpApp':
       return <TmpApp />;
@@ -47,24 +38,12 @@ const SelectedApp = (appName) => {
   }
 };
 
-//   const isSupportedURL = Linking.canOpenURL(url);
-//   console.log('checking...');
-//   if (isSupportedURL) {
-//     console.log('success');
-//     Linking.openURL(url);
-//   } else {
-// Alert.alert('Cannot open url');
-//     console.log('invalid url');
-//   }
-// };
-
 const ApplicationPage = ({ route }) => {
   const { appName } = route.params;
   return (
     <View>
       <SelectedApp appName={appName} />
       <Text>{!appName ? 'Null' : appName}</Text>
-      <TestURLButton />
     </View>
   );
 };
