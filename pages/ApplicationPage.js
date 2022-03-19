@@ -8,7 +8,7 @@ const SelectedApp = (appName) => {
     // appNameにはAppIconに渡したnameプロパティが入っているので，それを使って
     // appsディレクトリからインポートしたアプリコンポーネントを選択する
 
-    case 'amazon':
+    case 'flashcard':
       console.log(appName);
       return <Flashcard />;
     case 'TmpApp':
