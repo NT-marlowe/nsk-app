@@ -16,7 +16,7 @@ const AppList = (props) => {
         <AppIcon name="account-group" text="friends" />
         <AppIcon name="alarm" text="alarm" />
         <AppIcon name="exponent" text="maths" />
-        <AppIcon name="apps" text="apps" />
+        <AppIcon name="file-pdf-box" text="PDF" />
         <AppIcon name="archive" text="submit" />
         <AppIcon name="chart-bar-stacked" text="statistics" />
         <AppIcon name="folder" text="folder" />

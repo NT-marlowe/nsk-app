@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
 import vocab from '../assets/flashcard.json';
-import AnswerChoice from '../components/flashcard/AnswerChoice';
 import CountTenSec from '../components/flashcard/CountTenSec';
+import AnswerChoiceScreen from '../components/flashcard/AnswerChoiceScreen';
 
 const Flashcard = () => {
   let random_index = Math.floor(Math.random() * vocab.length);
@@ -38,32 +38,10 @@ const Flashcard = () => {
     <View style={styles.container}>
       <Image style={styles.image} source={require('../assets/correct.jpg')} />
       <CountTenSec isTimeOut={isTimeOut} setIsTimeOut={setIsTimeOut} />
-      <View>
-        <Text>{isTimeOut ? 'true' : 'false'}</Text>
-      </View>
       <Text style={styles.eng}>{problem_eng}</Text>
       <View style={styles.answerContainer}>
         <Text>{console.log(random_index)}</Text>
-        <AnswerChoice
-          self_position={0}
-          random_correct_position={random_correct_position}
-          Japanese={vocab[answer_choices_index[0]].Japanese}
-        />
-        <AnswerChoice
-          self_position={1}
-          random_correct_position={random_correct_position}
-          Japanese={vocab[answer_choices_index[1]].Japanese}
-        />
-        <AnswerChoice
-          self_position={2}
-          random_correct_position={random_correct_position}
-          Japanese={vocab[answer_choices_index[2]].Japanese}
-        />
-        <AnswerChoice
-          self_position={3}
-          random_correct_position={random_correct_position}
-          Japanese={vocab[answer_choices_index[3]].Japanese}
-        />
+        <Choices random_index={random_index} vocab={vocab} />
       </View>
     </View>
   );
