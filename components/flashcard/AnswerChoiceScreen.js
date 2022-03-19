@@ -3,7 +3,7 @@ import { StyleSheet, View, Button } from 'react-native';
 import CorrectScreen from './CorrectScreen';
 import WrongScreen from './WrongScreen';
 
-const AnswerChoice = (props) => {
+const AnswerChoiceScreen = (props) => {
   const pressHandler = () => {
     if (props.self_position == props.random_correct_position) {
       return <CorrectScreen />;
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
   container: {},
 });
 
-export default AnswerChoice;
+export default AnswerChoiceScreen;
