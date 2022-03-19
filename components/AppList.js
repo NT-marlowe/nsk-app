@@ -12,17 +12,14 @@ const AppList = (props) => {
     <View style={styles.container}>
       <ScrollView horizontal={true}>
         {/* </View>horizontal={true} style={styles.scrollView}> */}
-        <AppIcon
-          name="acrobat"
-          // launchApp={() => navigation.navigate('Application')}
-        />
-        <AppIcon name="amazon" />
-        <AppIcon name="angellist" />
-        <AppIcon name="aol" />
-        <AppIcon name="appnet" />
-        <AppIcon name="appstore" />
-        <AppIcon name="bitbucket" />
-        <AppIcon name="bitcoin" />
+        <AppIcon name="cards-outline" text="flashcard" />
+        <AppIcon name="account-group" text="friends" />
+        <AppIcon name="alarm" text="alarm" />
+        <AppIcon name="exponent" text="maths" />
+        <AppIcon name="apps" text="apps" />
+        <AppIcon name="archive" text="submit" />
+        <AppIcon name="chart-bar-stacked" text="statistics" />
+        <AppIcon name="folder" text="folder" />
       </ScrollView>
     </View>
   );
