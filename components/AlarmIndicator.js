@@ -1,10 +1,10 @@
 // 一旦セーブしないとsecondsが更新されない
 
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, Image, Text, Alert } from 'react-native';
+import { StyleSheet, View, Image, Text } from 'react-native';
 
 const AlarmIndicator = () => {
-  const [seconds, setSeconds] = useState(3000);
+  const [seconds, setSeconds] = useState(6000);
   // const [isUpdatingSeconds, setIsUpdatingSeconds] = useState(true);
 
   // useEffect(() => {
@@ -21,9 +21,12 @@ const AlarmIndicator = () => {
   //     });
   //   // setIsUpdatingSeconds(false);
   // }, []);
+
   useEffect(() => {
     const interval = setInterval(() => {
+      // if (isUpdatingSeconds !== true) {
       setSeconds((seconds) => seconds - 1);
+      // }
     }, 1000);
     return () => {
       clearInterval(interval);
@@ -44,17 +47,18 @@ const AlarmIndicator = () => {
   //     }
   //   );
   // }, [seconds]);
-  // const seconds = 20000;
 
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('../assets/ei-clock.png')} />
+      <Image style={styles.image} source={require('../assets/favicon.png')} />
       <Text style={styles.text}>
+        {/* {Math.trunc(seconds / 3600)}時間{Math.trunc((seconds % 3600) / 60)}分 */}
+        {/* {Math.trunc(seconds % 60)} */}
         {('000' + Math.trunc(seconds / 3600)).slice(-2)}:
-        {('000' + Math.trunc(seconds % 3600) / 60).slice(-2)}:
+        {('000' + Math.trunc((seconds % 3600) / 60)).slice(-2)}:
         {('000' + Math.trunc(seconds % 60)).slice(-2)}
+        {/* {Math.trunc(seconds % 60)} */}
       </Text>
-      {/* {seconds < 0 ? null : <Alert>{seconds}</Alert>} */}
     </View>
   );
 };
@@ -63,6 +67,8 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     marginTop: 10,
+    // alignSelf: 'flex-end',
+    // flex: 1,
   },
   text: {
     fontSize: 15,
