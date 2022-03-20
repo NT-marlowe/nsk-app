@@ -5,15 +5,15 @@ import { StyleSheet, View, Image, Text } from 'react-native';
 import { TimerContext } from '../App';
 
 const AlarmIndicator = () => {
-  // const { seconds, setSeconds } = useContext(TimerContext);
   const timerContext = useContext(TimerContext);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log(timerContext.seconds);
+      if (timerContext.seconds === 0 && timerContext.timerIsOn) {
+        timerContext.setTimerIsOn(false);
+      }
       if (timerContext.timerIsOn && timerContext.seconds > 0) {
         timerContext.setSeconds(() => timerContext.seconds - 1);
-        // if (seconds === 0) timerContext.setTimerIsOn(false);
       }
     }, 1000);
     return () => {

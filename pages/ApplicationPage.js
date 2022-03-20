@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import Flashcard from '../apps/Flashcard';
 import TimerApp from '../apps/TimerApp';
 

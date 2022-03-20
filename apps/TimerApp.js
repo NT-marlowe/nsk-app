@@ -28,6 +28,7 @@ const TimerApp = () => {
     <View>
       {timerContext.timerIsOn ? <Text>TimerApp</Text> : <Text>No timer</Text>}
       <TextInput
+        style={styles.input}
         onChangeText={(input) => setInputSeconds(input)}
         keyboardType="number-pad"
         placeholder="input secondes"
@@ -37,4 +38,18 @@ const TimerApp = () => {
   );
 };
 
+const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 40,
+    width: '100%',
+  },
+  input: {
+    padding: 10,
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: 'black',
+  },
+});
 export default TimerApp;
