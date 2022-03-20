@@ -11,6 +11,7 @@ const AnswerChoice = (props) => {
       props.setIsCorrect(false);
     }
   };
+
   return (
     <View style={styles.container}>
       <Button title={props.Japanese} onPress={pressHandler} />

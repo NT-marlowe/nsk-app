@@ -20,9 +20,15 @@ const CountTenSec = (props) => {
   useEffect(() => {
     if (countTenSec < 1) {
       props.setIsTimeOut(true);
-      setCountTenSec(10);
     }
   }, [countTenSec]);
+
+  useEffect(() => {
+    if (props.isTimeOut) {
+      setCountTenSec(10);
+      props.setIsTimeOut(false);
+    }
+  }, [props.isTimeOut]);
 
   return (
     <View>

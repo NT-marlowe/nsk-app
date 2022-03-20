@@ -6,7 +6,9 @@ import CountTenSec from '../components/flashcard/CountTenSec';
 import ChoicesScreen from '../components/flashcard/ChoicesScreen';
 
 const Flashcard = () => {
-  let random_index = Math.floor(Math.random() * vocab.length);
+  const [isTimeOut, setIsTimeOut] = useState(false);
+
+  const random_index = Math.floor(Math.random() * vocab.length);
   let answer_choices_index = [random_index];
   while (answer_choices_index.length < 4) {
     const r = Math.floor(Math.random() * vocab.length);
@@ -17,38 +19,11 @@ const Flashcard = () => {
     }
     answer_choices_index.push(r);
   }
-
-  const [isTimeOut, setIsTimeOut] = useState(false);
-  const [forceRender, setForceRender] = useState(false);
-
   const problem = vocab[random_index];
   const problem_eng = problem.English;
   const random_correct_position = Math.floor(Math.random() * 4);
   answer_choices_index[0] = answer_choices_index[random_correct_position];
   answer_choices_index[random_correct_position] = random_index;
-
-  useEffect(() => {
-    if (isTimeOut) {
-      setIsTimeOut(false);
-    }
-  }, [isTimeOut]);
-
-  // useEffect(() => {
-  //   if (isSelected) {
-  //     random_index = Math.floor(Math.random() * vocab.length);
-
-  //     setIsTimeOut(false);
-  //   }
-  // }, [isSelected]);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setIsSelected(false);
-  //   }, 1000);
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, [isSelected]);
 
   return (
     <View style={styles.container}>
@@ -63,7 +38,7 @@ const Flashcard = () => {
           random_correct_position={random_correct_position}
           vocab={vocab}
           answer_choices_index={answer_choices_index}
-          setForceRender={setForceRender}
+          setIsTimeOut={setIsTimeOut}
         />
       </View>
     </View>

@@ -3,20 +3,8 @@ import { StyleSheet, View, Image } from 'react-native';
 import AnswerChoice from './AnswerChoice';
 
 const ChoicesScreen = (props) => {
-  const [isSelected, setIsSelected] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsSelected(false);
-      setIsCorrect(false);
-      props.setForceRender(true);
-      props.setForceRender(false);
-    }, 1000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, [isSelected]);
+  const [isSelected, setIsSelected] = useState(false);
 
   let image = null;
   if (isSelected) {
@@ -37,6 +25,20 @@ const ChoicesScreen = (props) => {
     }
   }
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (isSelected) {
+        setIsSelected(false);
+        setIsCorrect(false);
+        props.setIsTimeOut(true);
+      }
+    }, 500);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [isSelected]);
+
   return (
     <View style={styles.container}>
       {image}
@@ -47,6 +49,7 @@ const ChoicesScreen = (props) => {
           Japanese={props.vocab[props.answer_choices_index[0]].Japanese}
           setIsSelected={setIsSelected}
           setIsCorrect={setIsCorrect}
+          setIsTimeOut={props.setIsTimeOut}
         />
         <AnswerChoice
           self_position={1}
@@ -54,6 +57,7 @@ const ChoicesScreen = (props) => {
           Japanese={props.vocab[props.answer_choices_index[1]].Japanese}
           setIsSelected={setIsSelected}
           setIsCorrect={setIsCorrect}
+          setIsTimeOut={props.setIsTimeOut}
         />
         <AnswerChoice
           self_position={2}
@@ -61,6 +65,7 @@ const ChoicesScreen = (props) => {
           Japanese={props.vocab[props.answer_choices_index[2]].Japanese}
           setIsSelected={setIsSelected}
           setIsCorrect={setIsCorrect}
+          setIsTimeOut={props.setIsTimeOut}
         />
         <AnswerChoice
           self_position={3}
@@ -68,6 +73,7 @@ const ChoicesScreen = (props) => {
           Japanese={props.vocab[props.answer_choices_index[3]].Japanese}
           setIsSelected={setIsSelected}
           setIsCorrect={setIsCorrect}
+          setIsTimeOut={props.setIsTimeOut}
         />
       </View>
     </View>
