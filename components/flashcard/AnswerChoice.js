@@ -11,6 +11,7 @@ const AnswerChoice = (props) => {
       props.setIsCorrect(false);
     }
   };
+
   return (
     <View style={styles.container}>
       <Button title={props.Japanese} onPress={pressHandler} />
@@ -19,7 +20,10 @@ const AnswerChoice = (props) => {
 };
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    flex: 1,
+    // width: '30%',
+  },
 });
 
 export default AnswerChoice;

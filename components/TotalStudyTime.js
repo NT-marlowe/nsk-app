@@ -1,11 +1,25 @@
 // 一旦セーブしないとsecondsが更新されない
 
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, Image, Text } from 'react-native';
+import { StyleSheet, View, Image, Text, FlatList } from 'react-native';
+import MCI from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const TotalStudyTime = () => {
   const [seconds, setSeconds] = useState(0);
-  // const [isUpdatingSeconds, setIsUpdatingSeconds] = useState(true);
+
+  let DATA = [];
+  let tmpSec = seconds;
+  const numStar = Math.trunc(tmpSec / (60 * 60));
+  const numTriforce = Math.trunc((seconds % (60 * 60)) / (60 * 10));
+  for (let i = 0; i < Math.trunc((seconds % 600) / 60); i++) {
+    DATA.push({ name: 'trophy' });
+  }
+  for (let i = 0; i < numTriforce; i++) {
+    DATA.push({ name: 'triforce' });
+  }
+  for (let i = 0; i < numStar; i++) {
+    DATA.push({ name: 'trophy-award' });
+  }
 
   useEffect(() => {
     fetch(
@@ -19,7 +33,6 @@ const TotalStudyTime = () => {
           setSeconds(data.seconds);
         }
       });
-    // setIsUpdatingSeconds(false);
   }, []);
 
   useEffect(() => {
@@ -48,12 +61,22 @@ const TotalStudyTime = () => {
     );
   }, [seconds]);
 
+  const renderItem = ({ item }) => {
+    return <MCI name={item.name} color="black" size={20} style={styles.icon} />;
+  };
+
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('../assets/favicon.png')} />
+      <FlatList
+        data={DATA}
+        renderItem={renderItem}
+        horizontal={true}
+        style={styles.list}
+        inverted={true}
+      />
+
       <Text style={styles.text}>
         {Math.trunc(seconds / 3600)}時間{Math.trunc((seconds % 3600) / 60)}分
-        {/* {Math.trunc(seconds % 60)} */}
       </Text>
     </View>
   );
@@ -75,6 +98,13 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
     resizeMode: 'stretch',
+    marginRight: 10,
+  },
+  icon: {
+    // alignSelf: 'center',
+    // margin: 10,
+  },
+  list: {
     marginRight: 10,
   },
 });
