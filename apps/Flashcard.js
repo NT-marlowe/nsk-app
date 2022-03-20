@@ -19,13 +19,18 @@ const Flashcard = () => {
     }
     answer_choices_index.push(r);
   }
-
   const problem = vocab[random_index];
   const problem_eng = problem.English;
   const random_correct_position = Math.floor(Math.random() * 4);
   answer_choices_index[0] = answer_choices_index[random_correct_position];
   answer_choices_index[random_correct_position] = random_index;
 
+  return (
+    <View style={styles.container}>
+      <CountTenSec
+        problemCount={problemCount}
+        setProblemCount={setProblemCount}
+      />
       <View>
         <Text>{problemCount ? 'true' : 'false'}</Text>
       </View>
