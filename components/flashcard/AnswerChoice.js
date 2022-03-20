@@ -20,7 +20,10 @@ const AnswerChoice = (props) => {
 };
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    flex: 1,
+    // width: '30%',
+  },
 });
 
 export default AnswerChoice;

@@ -45,41 +45,52 @@ const ChoicesScreen = (props) => {
     <View style={styles.container}>
       {image}
       <View style={styles.container}>
-        <AnswerChoice
-          self_position={0}
-          random_correct_position={props.random_correct_position}
-          Japanese={props.vocab[props.answer_choices_index[0]].Japanese}
-          setIsSelected={setIsSelected}
-          setIsCorrect={setIsCorrect}
-        />
-        <AnswerChoice
-          self_position={1}
-          random_correct_position={props.random_correct_position}
-          Japanese={props.vocab[props.answer_choices_index[1]].Japanese}
-          setIsSelected={setIsSelected}
-          setIsCorrect={setIsCorrect}
-        />
-        <AnswerChoice
-          self_position={2}
-          random_correct_position={props.random_correct_position}
-          Japanese={props.vocab[props.answer_choices_index[2]].Japanese}
-          setIsSelected={setIsSelected}
-          setIsCorrect={setIsCorrect}
-        />
-        <AnswerChoice
-          self_position={3}
-          random_correct_position={props.random_correct_position}
-          Japanese={props.vocab[props.answer_choices_index[3]].Japanese}
-          setIsSelected={setIsSelected}
-          setIsCorrect={setIsCorrect}
-        />
+        <View style={styles.horizontalContainer}>
+          <AnswerChoice
+            self_position={0}
+            random_correct_position={props.random_correct_position}
+            Japanese={props.vocab[props.answer_choices_index[0]].Japanese}
+            setIsSelected={setIsSelected}
+            setIsCorrect={setIsCorrect}
+          />
+
+          <AnswerChoice
+            self_position={1}
+            random_correct_position={props.random_correct_position}
+            Japanese={props.vocab[props.answer_choices_index[1]].Japanese}
+            setIsSelected={setIsSelected}
+            setIsCorrect={setIsCorrect}
+          />
+        </View>
+        <View style={styles.horizontalContainer}>
+          <AnswerChoice
+            self_position={2}
+            random_correct_position={props.random_correct_position}
+            Japanese={props.vocab[props.answer_choices_index[2]].Japanese}
+            setIsSelected={setIsSelected}
+            setIsCorrect={setIsCorrect}
+          />
+          <AnswerChoice
+            self_position={3}
+            random_correct_position={props.random_correct_position}
+            Japanese={props.vocab[props.answer_choices_index[3]].Japanese}
+            setIsSelected={setIsSelected}
+            setIsCorrect={setIsCorrect}
+          />
+        </View>
       </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    width: '90%',
+    // alignItems: 'center',
+    justifyContent: 'center',
+    // flex: 1,
+    // borderLeftWidth: 30,
+  },
   image: {
     position: 'absolute',
     // flexDirection: 'column',
@@ -87,6 +98,13 @@ const styles = StyleSheet.create({
     alignContent: 'center',
     width: 300,
     height: 300,
+  },
+  horizontalContainer: {
+    alignItems: 'center',
+    // flex: 1,
+    // borderLeftWidth: 30,
+    // width: '70%',
+    flexDirection: 'row',
   },
 });
 
