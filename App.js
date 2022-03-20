@@ -6,14 +6,14 @@ import React, { useState } from 'react';
 import StartPage from './pages/StartPage';
 import ApplicationPage from './pages/ApplicationPage';
 
-import AlarmIndicator from './components/AlarmIndicator';
+import TimerIndicator from './components/TimerIndicator';
 
 const Stack = createNativeStackNavigator();
 
 export const TimerContext = React.createContext();
 
 export default function App() {
-  const [seconds, setSeconds] = useState(10000);
+  const [seconds, setSeconds] = useState(0);
   const [timerIsOn, setTimerIsOn] = useState(false);
   const value = {
     seconds,
@@ -26,7 +26,7 @@ export default function App() {
     <NavigationContainer>
       <TimerContext.Provider value={value}>
         <View style={styles.container}>
-          <AlarmIndicator />
+          <TimerIndicator />
         </View>
 
         <Stack.Navigator initialRouteName="Home">

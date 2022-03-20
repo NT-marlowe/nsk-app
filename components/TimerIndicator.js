@@ -5,17 +5,21 @@ import { StyleSheet, View, Image, Text } from 'react-native';
 import { TimerContext } from '../App';
 
 const AlarmIndicator = () => {
-  const { seconds, setSeconds } = useContext(TimerContext);
+  // const { seconds, setSeconds } = useContext(TimerContext);
   const timerContext = useContext(TimerContext);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSeconds((seconds) => seconds - 1);
+      console.log(timerContext.seconds);
+      if (timerContext.timerIsOn && timerContext.seconds > 0) {
+        timerContext.setSeconds(() => timerContext.seconds - 1);
+        // if (seconds === 0) timerContext.setTimerIsOn(false);
+      }
     }, 1000);
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [timerContext.seconds]);
 
   if (!timerContext.timerIsOn) {
     return null;
@@ -25,9 +29,9 @@ const AlarmIndicator = () => {
     <View style={styles.container}>
       <Image style={styles.image} source={require('../assets/ei-clock.png')} />
       <Text style={styles.text}>
-        {('000' + Math.trunc(seconds / 3600)).slice(-2)}:
-        {('000' + Math.trunc((seconds % 3600) / 60)).slice(-2)}:
-        {('000' + Math.trunc(seconds % 60)).slice(-2)}
+        {('000' + Math.trunc(timerContext.seconds / 3600)).slice(-2)}:
+        {('000' + Math.trunc((timerContext.seconds % 3600) / 60)).slice(-2)}:
+        {('000' + Math.trunc(timerContext.seconds % 60)).slice(-2)}
       </Text>
     </View>
   );

@@ -5,7 +5,7 @@ import { TimerContext } from '../App';
 
 const TimerApp = () => {
   const timerContext = useContext(TimerContext);
-  const [inputSeconds, setInputSecond] = useState(0);
+  const [inputSeconds, setInputSeconds] = useState(0);
   const handlePressForStart = () => {
     timerContext.setTimerIsOn(true);
     timerContext.setSeconds(inputSeconds);
@@ -28,7 +28,7 @@ const TimerApp = () => {
     <View>
       {timerContext.timerIsOn ? <Text>TimerApp</Text> : <Text>No timer</Text>}
       <TextInput
-        onChangeText={(input) => setInputSecond(input)}
+        onChangeText={(input) => setInputSeconds(input)}
         keyboardType="number-pad"
         placeholder="input secondes"
       ></TextInput>
