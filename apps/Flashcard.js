@@ -6,7 +6,7 @@ import CountTenSec from '../components/flashcard/CountTenSec';
 import ChoicesScreen from '../components/flashcard/ChoicesScreen';
 
 const Flashcard = () => {
-  const [isTimeOut, setIsTimeOut] = useState(false);
+  const [problemCount, setProblemCount] = useState(0);
 
   const random_index = Math.floor(Math.random() * vocab.length);
   let answer_choices_index = [random_index];
@@ -27,9 +27,12 @@ const Flashcard = () => {
 
   return (
     <View style={styles.container}>
-      <CountTenSec isTimeOut={isTimeOut} setIsTimeOut={setIsTimeOut} />
+      <CountTenSec
+        problemCount={problemCount}
+        setProblemCount={setProblemCount}
+      />
       <View>
-        <Text>{isTimeOut ? 'true' : 'false'}</Text>
+        <Text>{problemCount ? 'true' : 'false'}</Text>
       </View>
       <Text style={styles.eng}>{problem_eng}</Text>
       <View style={styles.answerContainer}>
@@ -38,7 +41,7 @@ const Flashcard = () => {
           random_correct_position={random_correct_position}
           vocab={vocab}
           answer_choices_index={answer_choices_index}
-          setIsTimeOut={setIsTimeOut}
+          setProblemCount={setProblemCount}
         />
       </View>
     </View>

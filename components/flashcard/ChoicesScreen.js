@@ -30,7 +30,9 @@ const ChoicesScreen = (props) => {
       if (isSelected) {
         setIsSelected(false);
         setIsCorrect(false);
-        props.setIsTimeOut(true);
+        props.setProblemCount((problemCount) => {
+          return problemCount + 1;
+        });
       }
     }, 500);
 
@@ -49,7 +51,6 @@ const ChoicesScreen = (props) => {
           Japanese={props.vocab[props.answer_choices_index[0]].Japanese}
           setIsSelected={setIsSelected}
           setIsCorrect={setIsCorrect}
-          setIsTimeOut={props.setIsTimeOut}
         />
         <AnswerChoice
           self_position={1}
@@ -57,7 +58,6 @@ const ChoicesScreen = (props) => {
           Japanese={props.vocab[props.answer_choices_index[1]].Japanese}
           setIsSelected={setIsSelected}
           setIsCorrect={setIsCorrect}
-          setIsTimeOut={props.setIsTimeOut}
         />
         <AnswerChoice
           self_position={2}
@@ -65,7 +65,6 @@ const ChoicesScreen = (props) => {
           Japanese={props.vocab[props.answer_choices_index[2]].Japanese}
           setIsSelected={setIsSelected}
           setIsCorrect={setIsCorrect}
-          setIsTimeOut={props.setIsTimeOut}
         />
         <AnswerChoice
           self_position={3}
@@ -73,7 +72,6 @@ const ChoicesScreen = (props) => {
           Japanese={props.vocab[props.answer_choices_index[3]].Japanese}
           setIsSelected={setIsSelected}
           setIsCorrect={setIsCorrect}
-          setIsTimeOut={props.setIsTimeOut}
         />
       </View>
     </View>
