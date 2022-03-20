@@ -5,10 +5,10 @@ import { TimerContext } from '../App';
 
 const TimerApp = () => {
   const timerContext = useContext(TimerContext);
-  const [inputSeconds, setInputSeconds] = useState(0);
+  const [inputMinutes, setInputMinutes] = useState(0);
   const handlePressForStart = () => {
     timerContext.setTimerIsOn(true);
-    timerContext.setSeconds(inputSeconds);
+    timerContext.setSeconds(inputMinutes * 60);
   };
 
   const handlePressForStop = () => {
@@ -29,9 +29,9 @@ const TimerApp = () => {
       {timerContext.timerIsOn ? <Text>TimerApp</Text> : <Text>No timer</Text>}
       <TextInput
         style={styles.input}
-        onChangeText={(input) => setInputSeconds(input)}
+        onChangeText={(input) => setInputMinutes(input)}
         keyboardType="number-pad"
-        placeholder="input secondes"
+        placeholder="input minutes"
       ></TextInput>
       <Button title="set time" onPress={handlePressForStart} />
     </View>

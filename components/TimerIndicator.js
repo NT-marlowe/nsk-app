@@ -1,16 +1,19 @@
 // 一旦セーブしないとsecondsが更新されない
 
-import React, { useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
 import { TimerContext } from '../App';
 
 const AlarmIndicator = () => {
+  const [duration, setDuration] = useState(5);
   const timerContext = useContext(TimerContext);
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (timerContext.seconds === 0 && timerContext.timerIsOn) {
         timerContext.setTimerIsOn(false);
+        timerContext.setSeconds(-1);
+        setDuration(5);
       }
       if (timerContext.timerIsOn && timerContext.seconds > 0) {
         timerContext.setSeconds(() => timerContext.seconds - 1);
@@ -21,10 +24,25 @@ const AlarmIndicator = () => {
     };
   }, [timerContext.seconds]);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!timerContext.timerIsOn && duration > 0) {
+        setDuration((dur) => dur - 1);
+      }
+    }, 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [duration]);
+
   if (!timerContext.timerIsOn) {
+    if (duration > 0) {
+      return <Text>Well Done!</Text>;
+    }
     return null;
   }
 
+  console.log(duration);
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={require('../assets/ei-clock.png')} />
