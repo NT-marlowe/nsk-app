@@ -1,63 +1,33 @@
 // 一旦セーブしないとsecondsが更新されない
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
+import { TimerContext } from '../App';
 
 const AlarmIndicator = () => {
-  const [seconds, setSeconds] = useState(6000);
-  // const [isUpdatingSeconds, setIsUpdatingSeconds] = useState(true);
-
-  // useEffect(() => {
-  //   fetch(
-  //     'https://nskserver-97f50-default-rtdb.firebaseio.com/timer/timer.json'
-  //   )
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((data) => {
-  //       if (data !== null) {
-  //         setSeconds(data.seconds);
-  //       }
-  //     });
-  //   // setIsUpdatingSeconds(false);
-  // }, []);
+  const { seconds, setSeconds } = useContext(TimerContext);
+  const timerContext = useContext(TimerContext);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // if (isUpdatingSeconds !== true) {
       setSeconds((seconds) => seconds - 1);
-      // }
     }, 1000);
     return () => {
       clearInterval(interval);
     };
   }, []);
 
-  // useEffect(() => {
-  //   fetch(
-  //     'https://nskserver-97f50-default-rtdb.firebaseio.com/timer/timer.json',
-  //     {
-  //       method: 'PATCH',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({
-  //         seconds,
-  //       }),
-  //     }
-  //   );
-  // }, [seconds]);
+  if (!timerContext.timerIsOn) {
+    return null;
+  }
 
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('../assets/favicon.png')} />
+      <Image style={styles.image} source={require('../assets/ei-clock.png')} />
       <Text style={styles.text}>
-        {/* {Math.trunc(seconds / 3600)}時間{Math.trunc((seconds % 3600) / 60)}分 */}
-        {/* {Math.trunc(seconds % 60)} */}
         {('000' + Math.trunc(seconds / 3600)).slice(-2)}:
         {('000' + Math.trunc((seconds % 3600) / 60)).slice(-2)}:
         {('000' + Math.trunc(seconds % 60)).slice(-2)}
-        {/* {Math.trunc(seconds % 60)} */}
       </Text>
     </View>
   );

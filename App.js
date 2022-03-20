@@ -1,8 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 
 import StartPage from './pages/StartPage';
 import ApplicationPage from './pages/ApplicationPage';
@@ -11,23 +10,34 @@ import AlarmIndicator from './components/AlarmIndicator';
 
 const Stack = createNativeStackNavigator();
 
-export default function App() {
-  return (
-    // <View>
-    <NavigationContainer>
-      <View style={styles.container}>
-        {/* <Text>hoge</Text> */}
-        <AlarmIndicator />
-      </View>
+export const TimerContext = React.createContext();
 
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen
-          name="Home"
-          component={StartPage}
-          options={{ title: 'Start Page' }}
-        />
-        <Stack.Screen name="Application" component={ApplicationPage} />
-      </Stack.Navigator>
+export default function App() {
+  const [seconds, setSeconds] = useState(10000);
+  const [timerIsOn, setTimerIsOn] = useState(false);
+  const value = {
+    seconds,
+    setSeconds,
+    timerIsOn,
+    setTimerIsOn,
+  };
+
+  return (
+    <NavigationContainer>
+      <TimerContext.Provider value={value}>
+        <View style={styles.container}>
+          <AlarmIndicator />
+        </View>
+
+        <Stack.Navigator initialRouteName="Home">
+          <Stack.Screen
+            name="Home"
+            component={StartPage}
+            options={{ title: 'Start Page' }}
+          />
+          <Stack.Screen name="Application" component={ApplicationPage} />
+        </Stack.Navigator>
+      </TimerContext.Provider>
     </NavigationContainer>
   );
 }
