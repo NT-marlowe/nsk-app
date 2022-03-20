@@ -25,26 +25,11 @@ const ChoicesScreen = (props) => {
     }
   }
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (isSelected) {
-        setIsSelected(false);
-        setIsCorrect(false);
-        props.setProblemCount((problemCount) => {
-          return problemCount + 1;
-        });
-      }
-    }, 500);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [isSelected]);
-
   return (
     <View style={styles.container}>
       {image}
       <View style={styles.container}>
+
         <View style={styles.horizontalContainer}>
           <AnswerChoice
             self_position={0}

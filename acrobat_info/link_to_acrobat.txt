@@ -1,0 +1,18 @@
+
+        E: intent-filter (line=281)
+          A: android:autoVerify(0x010104ee)=(type 0x12)0xffffffff
+          E: action (line=282)
+            A: android:name(0x01010003)="android.intent.action.VIEW" (Raw: "android.intent.action.VIEW")
+          E: category (line=284)
+            A: android:name(0x01010003)="android.intent.category.DEFAULT" (Raw: "android.intent.category.DEFAULT")
+          E: category (line=285)
+            A: android:name(0x01010003)="android.intent.category.BROWSABLE" (Raw: "android.intent.category.BROWSABLE")
+          E: data (line=287)
+            A: android:scheme(0x01010027)="https" (Raw: "https")
+            A: android:host(0x01010028)="adobeacrobat.app.link" (Raw: "adobeacrobat.app.link")
+          E: data (line=290)
+            A: android:scheme(0x01010027)="https" (Raw: "https")
+            A: android:host(0x01010028)="adobeacrobat-alternate.app.link" (Raw: "adobeacrobat-alternate.app.link")
+
+
+https://adobeacrobat.app.link

@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, ScrollView } from 'react-native';
 import AppIcon from './AppIcon';
 
-const AppList = (props) => {
+const AppList = () => {
   // const handleLaunchApp = () => {
   //   navigation.navigate('Application');
   // };
@@ -14,7 +14,7 @@ const AppList = (props) => {
         {/* </View>horizontal={true} style={styles.scrollView}> */}
         <AppIcon name="cards-outline" text="flashcard" />
         <AppIcon name="account-group" text="friends" />
-        <AppIcon name="alarm" text="alarm" />
+        <AppIcon name="alarm" text="timer" />
         <AppIcon name="exponent" text="maths" />
         <AppIcon name="file-pdf-box" text="PDF" />
         <AppIcon name="archive" text="submit" />

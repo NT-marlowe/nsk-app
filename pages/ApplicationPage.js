@@ -1,16 +1,16 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
-import TmpApp from '../apps/TmpApp';
 import Flashcard from '../apps/Flashcard';
 import OpenURLButton from '../components/OpenURLButton';
-
+import TimerApp from '../apps/TimerApp';
 const acrobatURL = 'https://adobeacrobat.app.link';
 const title = 'Acrobat';
 
-const SelectedApp = (appName) => {
-  switch (appName.appName) {
-    // appNameにはAppIconに渡したnameプロパティが入っているので，それを使って
-    // appsディレクトリからインポートしたアプリコンポーネントを選択する
+const ApplicationPage = ({ route }) => {
+  const SelectedApp = (appName) => {
+    switch (appName.appName) {
+      // appNameにはAppIconに渡したnameプロパティが入っているので，それを使って
+      // appsディレクトリからインポートしたアプリコンポーネントを選択する
 
     case 'flashcard':
       console.log(appName);
@@ -20,9 +20,9 @@ const SelectedApp = (appName) => {
       // return <Button title={title} onPress={() => console.log(acrobatURL)} />;
       return <OpenURLButton title={title} url={acrobatURL} />;
 
-    case 'TmpApp':
-      return <TmpApp />;
-
+     case 'timer':
+      return <TimerApp />;
+  
     case 'ios':
       return (
         <View>
@@ -38,7 +38,6 @@ const SelectedApp = (appName) => {
   }
 };
 
-const ApplicationPage = ({ route }) => {
   const { appName } = route.params;
   return (
     <View>
