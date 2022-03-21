@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
 import { Button } from 'react-native-elements';
-// import { Input } from 'react-native-elements';
 import TimerContext from '../store/timer-context';
 
 const TimerApp = () => {
@@ -21,13 +20,16 @@ const TimerApp = () => {
 
   if (timerContext.timerIsOn) {
     return (
-      <View style={styles.button}>
-        <Button
-          title="Stop Timer"
-          containerStyle={styles.containerStyle}
-          titleStyle={{ fontWeight: '500' }}
-          onPress={handlePressForStop}
-        />
+      <View style={styles.container}>
+        <Text style={styles.text}>Timer</Text>
+        <View style={styles.button}>
+          <Button
+            title="Stop Timer"
+            containerStyle={styles.containerStyle}
+            titleStyle={{ fontWeight: '500' }}
+            onPress={handlePressForStop}
+          />
+        </View>
       </View>
     );
   }
@@ -38,11 +40,14 @@ const TimerApp = () => {
       <View style={styles.input}>
         <TextInput
           onChangeText={(input) => setInputMinutes(input)}
-          style={styles.input2}
+          style={styles.textInput}
           keyboardType="number-pad"
           placeholder="input minutes"
-          placeholderTextColor="#9a73ef"
+          placeholderTextColor="#c0c0c0"
         ></TextInput>
+        <Text style={{ fontSize: 20, paddingLeft: 10, alignSelf: 'flex-end' }}>
+          [min]
+        </Text>
       </View>
       <View style={styles.button}>
         <Button
@@ -65,20 +70,20 @@ const styles = StyleSheet.create({
 
   text: {
     fontSize: 50,
+    paddingBottom: 20,
   },
 
-  input2: {
+  textInput: {
     fontSize: 30,
+    borderBottomWidth: 1,
+    borderBottomColor: 'black',
   },
 
   input: {
-    // fontSize: 40,
     // flex: 0.5,
+    flexDirection: 'row',
     height: 40,
-    // marginBottom: ,
     justifyContent: 'center',
-    borderBottomWidth: 1,
-    borderBottomColor: 'black',
   },
 
   button: {
@@ -86,10 +91,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     // width: '100%',
     height: '60%',
-    // flex: 3,
-    // flex: 1,
-    // width: '%',
-    // alignItems: 'center',
   },
 
   containerStyle: {
