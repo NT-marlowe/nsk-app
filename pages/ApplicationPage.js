@@ -22,12 +22,6 @@ const ApplicationPage = ({ route }) => {
       case 'timer':
         return <TimerApp />;
 
-      case 'ios':
-        return (
-          <View>
-            <Text>iOS</Text>
-          </View>
-        );
       default:
         return (
           <View>

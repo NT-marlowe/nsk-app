@@ -71,6 +71,7 @@ const TotalStudyTime = () => {
         style={styles.list}
         inverted={true}
         keyExtractor={() => Math.random().toString()}
+        // keyExtractor={(item, index) => index.toString()}
       />
 
       <Text style={styles.text}>
