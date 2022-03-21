@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
-import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
+import { View, Text, TextInput, StyleSheet } from 'react-native';
+import { Button } from 'react-native-elements';
 
 import TimerContext from '../store/timer-context';
 
@@ -18,14 +19,14 @@ const TimerApp = () => {
 
   if (timerContext.timerIsOn) {
     return (
-      <View>
-        <Button title="stop timer" onPress={handlePressForStop} />
+      <View style={styles.button}>
+        <Button title="stop timer" type="solid" onPress={handlePressForStop} />
       </View>
     );
   }
 
   return (
-    <View>
+    <View style={styles.container}>
       {timerContext.timerIsOn ? <Text>TimerApp</Text> : <Text>No timer</Text>}
       <TextInput
         style={styles.input}
@@ -46,10 +47,15 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   input: {
-    padding: 10,
+    marginBottom: 10,
     alignItems: 'center',
     borderBottomWidth: 1,
     borderBottomColor: 'black',
+  },
+  button: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
   },
 });
 export default TimerApp;

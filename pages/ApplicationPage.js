@@ -35,7 +35,6 @@ const ApplicationPage = ({ route }) => {
   return (
     <View>
       <SelectedApp appName={appName} />
-      <Text>{!appName ? 'Null' : appName}</Text>
     </View>
   );
 };
