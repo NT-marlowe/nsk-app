@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
 import Flashcard from '../apps/Flashcard';
 import OpenURLButton from '../components/OpenURLButton';
 import TimerApp from '../apps/TimerApp';
@@ -32,19 +32,16 @@ const ApplicationPage = ({ route }) => {
   };
 
   const { appName } = route.params;
-  return (
-    <View style={styles.container}>
-      <SelectedApp appName={appName} />
-    </View>
-  );
+  return <SelectedApp appName={appName} />;
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     height: '100%',
+//   },
+// });
+
 export default ApplicationPage;
