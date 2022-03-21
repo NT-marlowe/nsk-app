@@ -1,5 +1,4 @@
 // 一旦セーブしないとsecondsが更新されない
-
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, Image, Text, FlatList } from 'react-native';
 import MCI from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -37,9 +36,7 @@ const TotalStudyTime = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // if (isUpdatingSeconds !== true) {
       setSeconds((seconds) => seconds + 1);
-      // }
     }, 1000);
     return () => {
       clearInterval(interval);
@@ -73,6 +70,8 @@ const TotalStudyTime = () => {
         horizontal={true}
         style={styles.list}
         inverted={true}
+        keyExtractor={() => Math.random().toString()}
+        // keyExtractor={(item, index) => index.toString()}
       />
 
       <Text style={styles.text}>

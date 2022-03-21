@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
 
-import { TimerContext } from '../App';
+import TimerContext from '../store/timer-context';
 
 const TimerApp = () => {
   const timerContext = useContext(TimerContext);

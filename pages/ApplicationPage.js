@@ -12,31 +12,24 @@ const ApplicationPage = ({ route }) => {
       // appNameにはAppIconに渡したnameプロパティが入っているので，それを使って
       // appsディレクトリからインポートしたアプリコンポーネントを選択する
 
-    case 'flashcard':
-      console.log(appName);
-      return <Flashcard />;
+      case 'flashcard':
+        console.log(appName);
+        return <Flashcard />;
 
-    case 'PDF':
-      // return <Button title={title} onPress={() => console.log(acrobatURL)} />;
-      return <OpenURLButton title={title} url={acrobatURL} />;
+      case 'PDF':
+        return <OpenURLButton title={title} url={acrobatURL} />;
 
-     case 'timer':
-      return <TimerApp />;
-  
-    case 'ios':
-      return (
-        <View>
-          <Text>iOS</Text>
-        </View>
-      );
-    default:
-      return (
-        <View>
-          <Text>Unknown</Text>
-        </View>
-      );
-  }
-};
+      case 'timer':
+        return <TimerApp />;
+
+      default:
+        return (
+          <View>
+            <Text>Unknown</Text>
+          </View>
+        );
+    }
+  };
 
   const { appName } = route.params;
   return (
