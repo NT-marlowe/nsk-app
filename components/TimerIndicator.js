@@ -2,9 +2,10 @@
 
 import React, { useState, useEffect, useContext } from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
-import { TimerContext } from '../App';
+// import { TimerContext } from '../App';
+import TimerContext from '../store/timer-context';
 
-const AlarmIndicator = () => {
+const TimerIndicator = () => {
   const [duration, setDuration] = useState(5);
   const timerContext = useContext(TimerContext);
 
@@ -75,4 +76,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AlarmIndicator;
+export default TimerIndicator;

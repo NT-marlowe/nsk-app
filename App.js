@@ -7,24 +7,25 @@ import StartPage from './pages/StartPage';
 import ApplicationPage from './pages/ApplicationPage';
 
 import TimerIndicator from './components/TimerIndicator';
-
+import { TimerContextProvider } from './store/timer-context';
 const Stack = createNativeStackNavigator();
 
-export const TimerContext = React.createContext();
+// export const TimerContext = React.createContext();
 
 export default function App() {
-  const [seconds, setSeconds] = useState(0);
-  const [timerIsOn, setTimerIsOn] = useState(false);
-  const value = {
-    seconds,
-    setSeconds,
-    timerIsOn,
-    setTimerIsOn,
-  };
+  // const [seconds, setSeconds] = useState(0);
+  // const [timerIsOn, setTimerIsOn] = useState(false);
+  // const value = {
+  //   seconds,
+  //   setSeconds,
+  //   timerIsOn,
+  //   setTimerIsOn,
+  // };
 
   return (
     <NavigationContainer>
-      <TimerContext.Provider value={value}>
+      {/* <TimerContext.Provider value={value}> */}
+      <TimerContextProvider>
         <View style={styles.container}>
           <TimerIndicator />
         </View>
@@ -37,7 +38,8 @@ export default function App() {
           />
           <Stack.Screen name="Application" component={ApplicationPage} />
         </Stack.Navigator>
-      </TimerContext.Provider>
+      </TimerContextProvider>
+      {/* </TimerContext.Provider> */}
     </NavigationContainer>
   );
 }
