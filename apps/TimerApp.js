@@ -26,36 +26,43 @@ const TimerApp = () => {
   }
 
   return (
-    <View style={styles.container}>
-      {timerContext.timerIsOn ? <Text>TimerApp</Text> : <Text>No timer</Text>}
-      <TextInput
-        style={styles.input}
-        onChangeText={(input) => setInputMinutes(input)}
-        keyboardType="number-pad"
-        placeholder="input minutes"
-      ></TextInput>
-      <Button title="set time" onPress={handlePressForStart} />
+    <View>
+      <View sytle={styles.input}>
+        <TextInput
+          onChangeText={(input) => setInputMinutes(input)}
+          keyboardType="number-pad"
+          placeholder="input minutes"
+        ></TextInput>
+      </View>
+      <View style={styles.button}>
+        <Button title="set time" onPress={handlePressForStart} />
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
-    height: 40,
-    width: '100%',
   },
+
   input: {
+    flex: 1,
     marginBottom: 10,
-    alignItems: 'center',
+    justifyContent: 'center',
     borderBottomWidth: 1,
     borderBottomColor: 'black',
   },
+
   button: {
     justifyContent: 'center',
     alignItems: 'center',
-    width: '100%',
+    width: '60%',
+    height: '60%',
+    // flex: 1,
+    // width: '%',
+    // alignItems: 'center',
   },
 });
 export default TimerApp;
