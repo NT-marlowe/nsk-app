@@ -40,7 +40,6 @@ const TimerIndicator = () => {
     return null;
   }
 
-  console.log(duration);
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={require('../assets/ei-clock.png')} />
