@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import Flashcard from '../apps/Flashcard';
-import OpenURLButton from '../components/OpenURLButton';
+// import OpenURLButton from '../components/OpenURLButton';
 import TimerApp from '../apps/TimerApp';
-const acrobatURL = 'https://adobeacrobat.app.link';
-const title = 'Acrobat';
+// const acrobatURL = 'https://adobeacrobat.app.link';
+// const title = 'Acrobat';
 
 const ApplicationPage = ({ route }) => {
   const SelectedApp = (appName) => {
@@ -16,8 +16,8 @@ const ApplicationPage = ({ route }) => {
         console.log(appName);
         return <Flashcard />;
 
-      case 'PDF':
-        return <OpenURLButton title={title} url={acrobatURL} />;
+      // case 'PDF':
+      //   return <OpenURLButton title={title} url={acrobatURL} />;
 
       case 'timer':
         return <TimerApp />;
