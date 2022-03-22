@@ -2,24 +2,30 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, Image, Text, FlatList } from 'react-native';
 import MCI from 'react-native-vector-icons/MaterialCommunityIcons';
+import FA from 'react-native-vector-icons/FontAwesome';
+import FA5 from 'react-native-vector-icons/FontAwesome5';
 
 const TotalStudyTime = () => {
   const [seconds, setSeconds] = useState(0);
 
   let DATA = [];
-  let tmpSec = seconds;
-  const numStar = Math.trunc(tmpSec / (60 * 60));
-  const numTriforce = Math.trunc((seconds % (60 * 60)) / (60 * 10));
-  for (let i = 0; i < Math.trunc((seconds % 600) / 60); i++) {
-    DATA.push({ name: 'trophy' });
-  }
-  for (let i = 0; i < numTriforce; i++) {
-    DATA.push({ name: 'triforce' });
-  }
-  for (let i = 0; i < numStar; i++) {
-    DATA.push({ name: 'trophy-award' });
-  }
+  const numStar = Math.trunc((seconds % (60 * 60 * 10)) / (60 * 60)); // 1h
+  const numAward = Math.trunc((seconds % (60 * 60 * 100)) / (60 * 60 * 10)); // 10h
+  const numDiamond = Math.trunc((seconds % (60 * 60 * 1000)) / (60 * 60 * 100));
+  const numTrophy = Math.trunc(seconds / (60 * 60 * 1000)); // 1000h
 
+  for (let i = 0; i < numStar; i++) {
+    DATA.push({ name: 'star', font: 'FA5', size: 12 });
+  }
+  for (let i = 0; i < numAward; i++) {
+    DATA.push({ name: 'award', font: 'FA5', size: 15 });
+  }
+  for (let i = 0; i < numDiamond; i++) {
+    DATA.push({ name: 'diamond', font: 'FA', size: 17 });
+  }
+  for (let i = 0; i < numTrophy; i++) {
+    DATA.push({ name: 'trophy', font: 'FA5', size: 19 });
+  }
   useEffect(() => {
     fetch(
       'https://nskserver-97f50-default-rtdb.firebaseio.com/timer/timer.json'
@@ -44,22 +50,42 @@ const TotalStudyTime = () => {
   }, []);
 
   useEffect(() => {
-    fetch(
-      'https://nskserver-97f50-default-rtdb.firebaseio.com/timer/timer.json',
-      {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          seconds,
-        }),
-      }
-    );
+    if (seconds != 0) {
+      fetch(
+        'https://nskserver-97f50-default-rtdb.firebaseio.com/timer/timer.json',
+        {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            seconds,
+          }),
+        }
+      );
+    }
   }, [seconds]);
 
   const renderItem = ({ item }) => {
-    return <MCI name={item.name} color="black" size={20} style={styles.icon} />;
+    if (item.font === 'FA') {
+      return (
+        <FA
+          name={item.name}
+          color="black"
+          size={item.size}
+          style={styles.icon}
+        />
+      );
+    } else {
+      return (
+        <FA5
+          name={item.name}
+          color="black"
+          size={item.size}
+          style={styles.icon}
+        />
+      );
+    }
   };
 
   return (
@@ -102,6 +128,7 @@ const styles = StyleSheet.create({
   icon: {
     // alignSelf: 'center',
     // margin: 10,
+    paddingLeft: 5,
   },
   list: {
     marginRight: 10,
