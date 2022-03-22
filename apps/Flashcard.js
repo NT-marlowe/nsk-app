@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flex: 1.5,
     // justifyContent: 'center',
-    marginLeft: '10%',
+    // marginLeft: '10%',
   },
   countContainer: {
     alignItems: 'center',
@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignSelf: 'center',
     fontSize: 100,
+    paddingTop: 80,
   },
 });
 

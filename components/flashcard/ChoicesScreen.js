@@ -12,7 +12,7 @@ const ChoicesScreen = (props) => {
       image = (
         <Image
           style={styles.image}
-          source={require('../../assets/correct.jpg')}
+          source={require('../../assets/correct_irasutoya.png')}
         />
       );
     } else {
@@ -86,7 +86,7 @@ const ChoicesScreen = (props) => {
 const styles = StyleSheet.create({
   container: {
     width: '90%',
-    // alignItems: 'center',
+    alignItems: 'center',
     justifyContent: 'center',
     // flex: 1,
     // borderLeftWidth: 30,
@@ -96,8 +96,8 @@ const styles = StyleSheet.create({
     // flexDirection: 'column',
     // justifyContent: 'center',
     alignContent: 'center',
-    width: 300,
-    height: 300,
+    width: 200,
+    height: 200,
   },
   horizontalContainer: {
     alignItems: 'center',
