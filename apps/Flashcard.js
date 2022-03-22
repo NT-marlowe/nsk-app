@@ -27,16 +27,20 @@ const Flashcard = () => {
 
   return (
     <View style={styles.container}>
-      <CountTenSec
-        problemCount={problemCount}
-        setProblemCount={setProblemCount}
-      />
+      {/* <View style={{ alignItems: 'center' }}> */}
       <Text style={styles.eng}>{problem_eng}</Text>
+      {/* </View> */}
       <View style={styles.answerContainer}>
         <ChoicesScreen
           random_correct_position={random_correct_position}
           vocab={vocab}
           answer_choices_index={answer_choices_index}
+          setProblemCount={setProblemCount}
+        />
+      </View>
+      <View style={styles.countContainer}>
+        <CountTenSec
+          problemCount={problemCount}
           setProblemCount={setProblemCount}
         />
       </View>
@@ -46,19 +50,30 @@ const Flashcard = () => {
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'center',
+    width: '100%',
+    // height: '100%',
+    flex: 1,
+    // flexDirection: 'column',
+    // justifyContent: 'center',
     // alignItems: 'center',
   },
   answerContainer: {
     alignItems: 'center',
+    flex: 1.5,
     // justifyContent: 'center',
-    marginLeft: '5%',
+    // marginLeft: '10%',
   },
-  eng: {},
-  word: {},
-  description: {},
+  countContainer: {
+    alignItems: 'center',
+    flex: 1,
+    paddingTop: 20,
+  },
+  eng: {
+    flex: 1,
+    alignSelf: 'center',
+    fontSize: 100,
+    paddingTop: 80,
+  },
 });
 
 export default Flashcard;

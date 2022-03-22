@@ -30,12 +30,18 @@ const CountTenSec = (props) => {
   }, [props.problemCount]);
 
   return (
-    <View>
-      <Text>{countTenSec}</Text>
+    <View style={styles.count}>
+      <Text style={{ fontSize: 30 }}>{countTenSec}</Text>
     </View>
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  count: {
+    borderBottomWidth: 1,
+    borderBottomColor: 'black',
+    alignItems: 'center',
+  },
+});
 
 export default CountTenSec;
