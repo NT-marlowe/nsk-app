@@ -96,8 +96,8 @@ const styles = StyleSheet.create({
     // flexDirection: 'column',
     // justifyContent: 'center',
     alignContent: 'center',
-    width: 200,
-    height: 200,
+    width: 400,
+    height: 400,
   },
   horizontalContainer: {
     alignItems: 'center',
