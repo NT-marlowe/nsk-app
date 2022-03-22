@@ -31,12 +31,8 @@ const Flashcard = () => {
         problemCount={problemCount}
         setProblemCount={setProblemCount}
       />
-      <View>
-        <Text>{problemCount ? 'true' : 'false'}</Text>
-      </View>
       <Text style={styles.eng}>{problem_eng}</Text>
       <View style={styles.answerContainer}>
-        <Text>{console.log(random_index)}</Text>
         <ChoicesScreen
           random_correct_position={random_correct_position}
           vocab={vocab}

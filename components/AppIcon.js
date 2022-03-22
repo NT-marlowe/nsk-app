@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Text, Alert } from 'react-native';
 import { NavigationContext } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { moveToAcrobat } from './OpenURLButton';
 
 const AppIcon = (props) => {
   const navigation = React.useContext(NavigationContext);
@@ -15,10 +16,13 @@ const AppIcon = (props) => {
       {
         text: 'Launch',
         onPress: () => {
-          // props.navigation.navigate('Application');
-          navigation.navigate('Application', {
-            appName: props.text,
-          });
+          if (props.text == 'PDF') {
+            moveToAcrobat();
+          } else {
+            navigation.navigate('Application', {
+              appName: props.text,
+            });
+          }
         },
         style: 'default',
       },
