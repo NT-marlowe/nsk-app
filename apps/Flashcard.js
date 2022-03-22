@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
   countContainer: {
     alignItems: 'center',
     flex: 1,
+    paddingTop: 20,
   },
   eng: {
     flex: 1,

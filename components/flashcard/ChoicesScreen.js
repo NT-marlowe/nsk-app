@@ -45,7 +45,7 @@ const ChoicesScreen = (props) => {
     <View style={styles.container}>
       {image}
       <View style={styles.container}>
-        <View style={styles.horizontalContainer}>
+        <View style={styles.choicesContainer}>
           <AnswerChoice
             self_position={0}
             random_correct_position={props.random_correct_position}
@@ -61,8 +61,8 @@ const ChoicesScreen = (props) => {
             setIsSelected={setIsSelected}
             setIsCorrect={setIsCorrect}
           />
-        </View>
-        <View style={styles.horizontalContainer}>
+          {/* </View> */}
+          {/* <View style={styles.horizontalContainer}> */}
           <AnswerChoice
             self_position={2}
             random_correct_position={props.random_correct_position}
@@ -105,6 +105,11 @@ const styles = StyleSheet.create({
     // borderLeftWidth: 30,
     // width: '70%',
     flexDirection: 'row',
+  },
+  choicesContainer: {
+    // alignItems: 'center',
+    // justifyContent: 'center'
+    padding: 20,
   },
 });
 
