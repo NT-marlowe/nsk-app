@@ -43,20 +43,20 @@ const TotalStudyTime = () => {
     };
   }, []);
 
-  useEffect(() => {
-    fetch(
-      'https://nskserver-97f50-default-rtdb.firebaseio.com/timer/timer.json',
-      {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          seconds,
-        }),
-      }
-    );
-  }, [seconds]);
+  // useEffect(() => {
+  //   fetch(
+  //     'https://nskserver-97f50-default-rtdb.firebaseio.com/timer/timer.json',
+  //     {
+  //       method: 'PATCH',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //         seconds,
+  //       }),
+  //     }
+  //   );
+  // }, [seconds]);
 
   const renderItem = ({ item }) => {
     return <MCI name={item.name} color="black" size={20} style={styles.icon} />;
