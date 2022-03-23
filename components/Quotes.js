@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     paddingLeft: 30,
     paddingRight: 30,
+    marginBottom: 60,
   },
   quote: {
     fontSize: 20,

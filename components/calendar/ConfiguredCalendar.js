@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
   calendar: {
     width: '80%',
     flex: 20,
+    marginBottom: 100,
   },
 });
 
