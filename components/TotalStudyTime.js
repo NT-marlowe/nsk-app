@@ -18,13 +18,13 @@ const TotalStudyTime = () => {
     DATA.push({ name: 'star', font: 'FA5', size: 12 });
   }
   for (let i = 0; i < numAward; i++) {
-    DATA.push({ name: 'award', font: 'FA5', size: 15 });
+    DATA.push({ name: 'award', font: 'FA5', size: 16 });
   }
   for (let i = 0; i < numDiamond; i++) {
-    DATA.push({ name: 'diamond', font: 'FA', size: 17 });
+    DATA.push({ name: 'diamond', font: 'FA', size: 20 });
   }
   for (let i = 0; i < numTrophy; i++) {
-    DATA.push({ name: 'trophy', font: 'FA5', size: 19 });
+    DATA.push({ name: 'trophy', font: 'FA5', size: 25 });
   }
   useEffect(() => {
     fetch(
@@ -112,10 +112,14 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     marginTop: 10,
+    marginBottom: 20,
+    paddingBottom: 15,
+    paddingTop: 5,
     alignSelf: 'flex-end',
     flex: 1,
   },
   text: {
+    height: 30,
     fontSize: 15,
     color: 'black',
     marginRight: 10,
@@ -132,6 +136,8 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
   },
   list: {
+    height: 40,
+    paddingTop: 2,
     marginRight: 10,
   },
 });
