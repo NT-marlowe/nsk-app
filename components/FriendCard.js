@@ -93,22 +93,22 @@ const styles = StyleSheet.create({
     // paddingTop: 5,
     // borderWidth: 1,
     paddingLeft: 60,
-    marginVertical: 20,
+    marginVertical: 24,
   },
   name: {
     fontSize: 25,
-    borderWidth: 1,
+    // borderWidth: 1,
   },
   image: {
     width: 40,
     height: 40,
     resizeMode: 'stretch',
     marginRight: 10,
-    borderWidth: 1,
+    // borderWidth: 1,
   },
   photo_name: {
     flexDirection: 'row',
-    borderWidth: 1,
+    // borderWidth: 1,
   },
   icon: {
     // alignSelf: 'center',
@@ -116,13 +116,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 3,
     paddingVertical: 4,
     alignSelf: 'flex-end',
-    borderWidth: 1,
+    // borderWidth: 1,
   },
   list: {
     //     height: 40,
     // paddingTop: 2,
     alignSelf: 'flex-start',
-    borderWidth: 1,
+    // borderWidth: 1,
   },
 });
 
