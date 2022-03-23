@@ -16,7 +16,7 @@ const AppIcon = (props) => {
       {
         text: 'Launch',
         onPress: () => {
-          if (props.text == 'PDF') {
+          if (props.text == 'textbook') {
             moveToAcrobat();
           } else {
             navigation.navigate('Application', {

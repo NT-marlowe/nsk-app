@@ -10,7 +10,7 @@ const ApplicationPage = ({ route }) => {
       // appNameにはAppIconに渡したnameプロパティが入っているので，それを使って
       // appsディレクトリからインポートしたアプリコンポーネントを選択する
 
-      case 'flashcard':
+      case 'English':
         console.log(appName);
         return <Flashcard />;
 
