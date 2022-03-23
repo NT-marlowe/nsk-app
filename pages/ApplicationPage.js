@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import Flashcard from '../apps/Flashcard';
+import Friends from '../apps/Friends';
 // import OpenURLButton from '../components/OpenURLButton';
 import TimerApp from '../apps/TimerApp';
 
@@ -16,6 +17,9 @@ const ApplicationPage = ({ route }) => {
 
       case 'timer':
         return <TimerApp />;
+
+      case 'friends':
+        return <Friends />;
 
       default:
         return (
