@@ -12,11 +12,12 @@ const AppList = () => {
     <View style={styles.container}>
       <ScrollView horizontal={true}>
         {/* </View>horizontal={true} style={styles.scrollView}> */}
-        <AppIcon name="cards-outline" text="flashcard" />
-        <AppIcon name="account-group" text="friends" />
+        <AppIcon name="book-open-page-variant" text="textbook" />
+        <AppIcon name="book-open-outline" text="note" />
+        <AppIcon name="cards-outline" text="English" />
         <AppIcon name="alarm" text="timer" />
         <AppIcon name="exponent" text="maths" />
-        <AppIcon name="file-pdf-box" text="PDF" />
+        <AppIcon name="account-group" text="friends" />
         <AppIcon name="archive" text="submit" />
         <AppIcon name="chart-bar-stacked" text="statistics" />
         <AppIcon name="folder" text="folder" />

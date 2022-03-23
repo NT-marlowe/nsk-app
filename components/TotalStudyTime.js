@@ -101,7 +101,8 @@ const TotalStudyTime = () => {
       />
 
       <Text style={styles.text}>
-        {Math.trunc(seconds / 3600)}時間{Math.trunc((seconds % 3600) / 60)}分
+        {Math.trunc(seconds / 3600)} hours {Math.trunc((seconds % 3600) / 60)}{' '}
+        min.
       </Text>
     </View>
   );
