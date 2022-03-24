@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 import FriendCard from '../components/FriendCard';
 
 const Friends = () => {
@@ -26,7 +26,7 @@ const Friends = () => {
     }
   };
 
-  return <View>{LineupCards(friends)}</View>;
+  return <ScrollView>{LineupCards(friends)}</ScrollView>;
 };
 
 const styles = StyleSheet.create({});

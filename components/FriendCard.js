@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, Image, Text, FlatList } from 'react-native';
-import MCI from 'react-native-vector-icons/MaterialCommunityIcons';
+// import MCI from 'react-native-vector-icons/MaterialCommunityIcons';
+import { Card } from 'react-native-elements';
 import FA from 'react-native-vector-icons/FontAwesome';
 import FA5 from 'react-native-vector-icons/FontAwesome5';
 
@@ -57,30 +58,32 @@ const FriendCard = (props) => {
   };
 
   return (
-    <View style={styles.container}>
-      <View style={styles.photo_name}>
-        <Image source={imagePath[props.id]} style={styles.image} />
+    <Card style={styles.card}>
+      <View style={styles.container}>
+        <View style={styles.photo_name}>
+          <Image source={imagePath[props.id]} style={styles.image} />
 
-        <Text style={styles.name}>{props.name}</Text>
-      </View>
-      <View style={styles.medals}>
-        <FlatList
-          data={DATA}
-          renderItem={renderItem}
-          horizontal={true}
-          style={styles.list}
-          inverted={true}
-          key={Math.random()}
-          keyExtractor={() => Math.random().toString()}
-          // keyExtractor={(item, index) => index.toString()}
-        />
+          <Text style={styles.name}>{props.name}</Text>
+        </View>
+        <View style={styles.medals}>
+          <FlatList
+            data={DATA}
+            renderItem={renderItem}
+            horizontal={true}
+            style={styles.list}
+            inverted={true}
+            key={Math.random()}
+            keyExtractor={() => Math.random().toString()}
+            // keyExtractor={(item, index) => index.toString()}
+          />
 
-        <Text style={styles.text}>
-          {Math.trunc(props.time / 3600)} hours{' '}
-          {Math.trunc((props.time % 3600) / 60)} minutes
-        </Text>
+          <Text style={styles.text}>
+            {Math.trunc(props.time / 3600)} hours{' '}
+            {Math.trunc((props.time % 3600) / 60)} minutes
+          </Text>
+        </View>
       </View>
-    </View>
+    </Card>
   );
 };
 
