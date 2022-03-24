@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import FriendCard from '../components/FriendCard';
 
-const Friends = (props) => {
+const Friends = () => {
   const [friends, setFriends] = useState([]);
   useEffect(() => {
     fetch('https://nskserver-97f50-default-rtdb.firebaseio.com/friends.json')
@@ -16,17 +16,17 @@ const Friends = (props) => {
       });
   }, []);
 
-  const lineupCards = (data) => {
-    if (friends.length !== 0) {
+  const LineupCards = (data) => {
+    if (data.length !== 0) {
       return data.map((d) => (
-        <FriendCard id={d.id} name={d.name} time={d.time} />
+        <FriendCard id={d.id} name={d.name} time={d.time} key={d.id} />
       ));
     } else {
       return null;
     }
   };
 
-  return <View>{lineupCards(friends)}</View>;
+  return <View>{LineupCards(friends)}</View>;
 };
 
 const styles = StyleSheet.create({});
