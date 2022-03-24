@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { StyleSheet, View, Image, Text, FlatList } from 'react-native';
-// import MCI from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Card } from 'react-native-elements';
 import FA from 'react-native-vector-icons/FontAwesome';
 import FA5 from 'react-native-vector-icons/FontAwesome5';
@@ -11,6 +10,7 @@ const imagePath = [
   require('../assets/onepiece02.png'),
   require('../assets/onepiece03.png'),
   require('../assets/onepiece04.png'),
+  require('../assets/onepiece05.png'),
 ];
 
 const FriendCard = (props) => {
